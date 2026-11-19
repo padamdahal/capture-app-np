@@ -1,0 +1,168 @@
+import React, { useEffect } from 'react';
+import { spacersNum } from '@dhis2/ui';
+import { withStyles, type WithStyles } from 'capture-core-utils/styles';
+import { DividerHorizontal as Divider } from 'capture-ui';
+import i18n from '@dhis2/d2-i18n';
+import { isValidOrgUnit } from 'capture-core-utils/validators/form';
+import { DataSection } from '../DataSection';
+import { Widget } from '../Widget';
+import { ScheduleButtons } from './ScheduleButtons';
+import { ScheduleDate } from './ScheduleDate';
+import { ScheduleText } from './ScheduleText';
+import { NoteSection } from '../WidgetNote';
+import type { OrgUnitValue, Props } from './widgetEventSchedule.types';
+import { CategoryOptions } from './CategoryOptions/CategoryOptions.component';
+import { Assignee } from './Assignee';
+import { ScheduleOrgUnit } from './ScheduleOrgUnit/ScheduleOrgUnit.component';
+import { LabelKeys, useTermLabel } from '../../customLabels';
+
+const styles = (theme: any) => ({
+    wrapper: {
+        paddingInlineStart: spacersNum.dp16,
+    },
+    evenNumbersRecords: {
+        backgroundColor: theme.palette.grey.lightest,
+    },
+    divider: {
+        backgroundColor: theme.palette.dividerForm,
+    },
+});
+
+
+const WidgetEventSchedulePlain = ({
+    stageId,
+    programName,
+    stageName,
+    displayDueDateLabel,
+    orgUnit,
+    onCancel,
+    onSchedule,
+    onAddNote,
+    classes,
+    scheduleDate,
+    suggestedScheduleDate,
+    setScheduledOrgUnit,
+    serverSuggestedScheduleDate,
+    setIsFormValid,
+    notes,
+    programCategory,
+    enableUserAssignment,
+    selectedCategories,
+    onClickCategoryOption,
+    onResetCategoryOption,
+    onSetAssignee,
+    assignee,
+    categoryOptionsError,
+    validation,
+    setValidation,
+    setInternalComponentError,
+    saveAttempted,
+    ...passOnProps
+}: Props & WithStyles<typeof styles>) => {
+    const onSelectOrgUnit = (e: OrgUnitValue) => {
+        setScheduledOrgUnit({
+            id: e.id,
+            name: e.displayName,
+            path: e.path,
+        });
+    };
+
+    const onDeselectOrgUnit = () => {
+        setScheduledOrgUnit(null);
+    };
+
+    useEffect(() => {
+        const formIsValid = () => Boolean(isValidOrgUnit(orgUnit) && scheduleDate && !validation?.error);
+        setIsFormValid(formIsValid());
+    }, [orgUnit, scheduleDate, validation, setIsFormValid]);
+    const { eventLabel, noteLabel, notesLabel } = useTermLabel(
+        [LabelKeys.eventSingular, LabelKeys.noteSingular, LabelKeys.notePlural],
+        { stageId },
+    );
+
+    return (
+        <Widget
+            noncollapsible
+            borderless
+        >
+            <div className={classes.wrapper}>
+                <DataSection
+                    dataTest="schedule-section"
+                    sectionName={i18n.t('Schedule info')}
+                >
+                    <ScheduleDate
+                        stageId={stageId}
+                        orgUnit={orgUnit}
+                        scheduleDate={scheduleDate}
+                        displayDueDateLabel={displayDueDateLabel}
+                        serverSuggestedScheduleDate={serverSuggestedScheduleDate}
+                        validation={validation}
+                        setValidation={setValidation}
+                        setInternalComponentError={setInternalComponentError}
+                        {...passOnProps}
+                    />
+                    <Divider className={classes.divider} />
+                    <div className={classes.evenNumbersRecords}>
+                        <ScheduleOrgUnit
+                            orgUnit={orgUnit}
+                            onSelectOrgUnit={onSelectOrgUnit}
+                            onDeselectOrgUnit={onDeselectOrgUnit}
+                            saveAttempted={saveAttempted}
+                            {...passOnProps}
+                        />
+                    </div>
+                </DataSection>
+                {programCategory && <DataSection
+                    dataTest="category-options-section"
+                    sectionName={programCategory.displayName}
+                >
+                    <CategoryOptions
+                        categories={programCategory.categories}
+                        selectedOrgUnitId={orgUnit?.id}
+                        selectedCategories={selectedCategories}
+                        categoryOptionsError={categoryOptionsError}
+                        onClickCategoryOption={onClickCategoryOption}
+                        onResetCategoryOption={onResetCategoryOption}
+                        required
+                    />
+                </DataSection>}
+                <DataSection
+                    dataTest="note-section"
+                    sectionName={i18n.t('{{eventLabel}} {{notesLabel}}', { eventLabel, notesLabel })}
+                >
+                    <NoteSection
+                        notes={notes}
+                        placeholder={i18n.t(
+                            'Write a {{noteLabel}} about this scheduled {{eventLabel}}',
+                            { eventLabel, noteLabel },
+                        )}
+                        emptyNoteMessage={i18n.t(
+                            "This {{eventLabel}} doesn't have any {{notesLabel}}",
+                            { eventLabel, notesLabel },
+                        )}
+                        handleAddNote={onAddNote}
+                        noteLabel={noteLabel}
+                    />
+                </DataSection>
+                {enableUserAssignment && (
+                    <DataSection dataTest="assignee-section" sectionName={i18n.t('Assignee')}>
+                        <Assignee assignee={assignee} onSetAssignee={onSetAssignee} />
+                    </DataSection>
+                )}
+                <ScheduleButtons
+                    hasChanges={scheduleDate !== suggestedScheduleDate}
+                    onCancel={onCancel}
+                    onSchedule={onSchedule}
+                />
+                <ScheduleText
+                    programName={programName}
+                    stageName={stageName}
+                    orgUnitName={orgUnit?.name ?? ''}
+                    stageId={stageId}
+                />
+            </div>
+        </Widget>
+    );
+};
+
+export const WidgetEventScheduleComponent = withStyles(styles)(WidgetEventSchedulePlain);

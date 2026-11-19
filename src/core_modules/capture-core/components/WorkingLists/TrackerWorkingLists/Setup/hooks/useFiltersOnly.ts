@@ -1,0 +1,105 @@
+import { useMemo } from 'react';
+import { featureAvailable, FEATURES } from 'capture-core-utils';
+import i18n from '@dhis2/d2-i18n';
+import { capitalizeFirstLetter } from 'capture-core-utils/string/capitalizeFirstLetter';
+import { dataElementTypes, type TrackerProgram } from '../../../../../metaData';
+import { LabelKeys, useTermLabel } from '../../../../../customLabels';
+import { MAIN_FILTERS } from '../../constants';
+
+export const useFiltersOnly = (
+    { enrollment: { enrollmentDateLabel, incidentDateLabel, showIncidentDate }, stages }: TrackerProgram,
+    programStageId?: string,
+) => {
+    const { enrollmentLabel, followUpLabel } = useTermLabel(
+        [LabelKeys.enrollmentSingular, LabelKeys.followUpSingular],
+    );
+    return useMemo(() => {
+        const enableUserAssignment =
+            !programStageId && Array.from(stages.values()).find((stage: any) => stage.enableUserAssignment);
+        return [
+            {
+                id: MAIN_FILTERS.PROGRAM_STATUS,
+                type: dataElementTypes.TEXT,
+                header: i18n.t('{{enrollmentLabel}} status', { enrollmentLabel }),
+                options: [
+                    { text: i18n.t('Active'), value: 'ACTIVE' },
+                    { text: i18n.t('Completed'), value: 'COMPLETED' },
+                    { text: i18n.t('Cancelled'), value: 'CANCELLED' },
+                ],
+                transformRecordsFilter: (rawFilter: string) => ({
+                    [featureAvailable(FEATURES.enrollmentStatusReplaceProgramStatusQueryParam)
+                        ? 'enrollmentStatus'
+                        : 'programStatus'
+                    ]: rawFilter.split(':')[1],
+                }),
+            },
+            {
+                id: MAIN_FILTERS.ENROLLED_AT,
+                type: dataElementTypes.DATE,
+                header: enrollmentDateLabel,
+                transformRecordsFilter: (filter: string) => {
+                    const queryArgs: any = {};
+                    const filterParts = filter.split(':');
+                    const indexGe = filterParts.indexOf('ge');
+                    const indexLe = filterParts.indexOf('le');
+                    if (indexGe !== -1 && filterParts[indexGe + 1]) {
+                        queryArgs.enrollmentEnrolledAfter = filterParts[indexGe + 1];
+                    }
+                    if (indexLe !== -1 && filterParts[indexLe + 1]) {
+                        queryArgs.enrollmentEnrolledBefore = filterParts[indexLe + 1];
+                    }
+                    return queryArgs;
+                },
+            },
+            ...(showIncidentDate
+                ? [
+                    {
+                        id: MAIN_FILTERS.OCCURED_AT,
+                        type: dataElementTypes.DATE,
+                        header: incidentDateLabel,
+                        transformRecordsFilter: (filter: string) => {
+                            const queryArgs: any = {};
+                            const filterParts = filter.split(':');
+                            const indexGe = filterParts.indexOf('ge');
+                            const indexLe = filterParts.indexOf('le');
+                            if (indexGe !== -1 && filterParts[indexGe + 1]) {
+                                queryArgs.enrollmentOccurredAfter = filterParts[indexGe + 1];
+                            }
+                            if (indexLe !== -1 && filterParts[indexLe + 1]) {
+                                queryArgs.enrollmentOccurredBefore = filterParts[indexLe + 1];
+                            }
+                            return queryArgs;
+                        },
+                    },
+                ]
+                : []),
+            {
+                id: MAIN_FILTERS.FOLLOW_UP,
+                type: dataElementTypes.BOOLEAN,
+                header: capitalizeFirstLetter(followUpLabel),
+                showInMoreFilters: true,
+                multiValueFilter: false,
+                transformRecordsFilter: (rawFilter: string) => ({
+                    followUp: rawFilter.split(':')[1],
+                }),
+            },
+            ...(enableUserAssignment
+                ? [
+                    {
+                        id: MAIN_FILTERS.ASSIGNEE,
+                        type: dataElementTypes.ASSIGNEE,
+                        header: i18n.t('Assigned to'),
+                        transformRecordsFilter: (rawFilter: any) => {
+                            const { assignedUserMode } = rawFilter;
+                            const assignedUsers = rawFilter.assignedUsers;
+                            return {
+                                assignedUserMode,
+                                ...(assignedUsers && { assignedUsers }),
+                            };
+                        },
+                    },
+                ]
+                : []),
+        ];
+    }, [enrollmentDateLabel, incidentDateLabel, showIncidentDate, stages, programStageId, enrollmentLabel, followUpLabel]);
+};

@@ -1,0 +1,83 @@
+import React, { type ComponentType } from 'react';
+import i18n from '@dhis2/d2-i18n';
+import { withStyles, type WithStyles } from 'capture-core-utils/styles';
+import { NoticeBox, spacersNum } from '@dhis2/ui';
+import moment from 'moment';
+import type { PlainProps } from './InfoBox.types';
+import { LabelKeys, useTermLabel } from '../../../customLabels';
+
+const styles = {
+    infoBox: {
+        marginTop: spacersNum.dp16,
+        padding: spacersNum.dp16,
+        width: 'fit-content',
+    },
+};
+
+const getDayDifference = (startDate: string, endDate: string): number =>
+    moment(startDate).diff(moment(endDate), 'days');
+
+type Props = PlainProps & WithStyles<typeof styles>;
+
+const InfoBoxPlain = ({
+    scheduleDate,
+    suggestedScheduleDate,
+    hideDueDate,
+    eventCountInOrgUnit,
+    orgUnitName,
+    stageId,
+    classes,
+}: Props) => {
+    const { eventLabel, eventsLabel } = useTermLabel([LabelKeys.eventSingular, LabelKeys.eventPlural], { stageId });
+    const dayDifference = getDayDifference(scheduleDate, suggestedScheduleDate);
+    const absoluteDifference = Math.abs(dayDifference);
+    const position = dayDifference > 0 ? i18n.t('after') : i18n.t('before');
+    const scheduledDateMatchesSuggested = scheduleDate === suggestedScheduleDate;
+
+    return (
+        <NoticeBox className={classes.infoBox}>
+            {hideDueDate ? (
+                <>
+                    {i18n.t('Scheduled automatically for {{suggestedScheduleDate}}', { suggestedScheduleDate })}
+                </>
+            ) : (
+                <>
+                    {scheduledDateMatchesSuggested
+                        ? i18n.t('The scheduled date matches the suggested date, but can be changed if needed.')
+                        : i18n.t(
+                            'The scheduled date is {{count}} days {{position}} the suggested date.',
+                            {
+                                position,
+                                count: absoluteDifference,
+                                defaultValue: 'The scheduled date is {{count}} day {{position}} the suggested date.',
+                                defaultValue_plural: 'The scheduled date is {{count}} days {{position}} the suggested date.',
+                            },
+                        )
+                    }
+                    {!!orgUnitName && (
+                        <>
+                            {' '}
+                            {i18n.t(
+                                'There are {{count}} scheduled {{eventLabel}} in this program '
+                                    + 'in {{orgUnitName}} on this day.',
+                                {
+                                    count: eventCountInOrgUnit,
+                                    orgUnitName,
+                                    eventLabel,
+                                    eventsLabel,
+                                    defaultValue: 'There are {{count}} scheduled {{eventLabel}} in this program '
+                                        + 'in {{orgUnitName}} on this day.',
+                                    defaultValue_plural: 'There are {{count}} scheduled {{eventsLabel}} in this program '
+                                        + 'in {{orgUnitName}} on this day.',
+                                },
+                            )}
+                        </>
+                    )}
+                </>
+
+            )}
+        </NoticeBox>
+    );
+};
+
+export const InfoBox = withStyles(styles)(InfoBoxPlain) as ComponentType<PlainProps>;

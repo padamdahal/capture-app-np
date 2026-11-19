@@ -1,0 +1,79 @@
+import React, { useState } from 'react';
+import { capitalizeFirstLetter } from 'capture-core-utils/string/capitalizeFirstLetter';
+import {
+    SingleOrgUnitSelectField,
+    withDefaultFieldContainer,
+    withDisplayMessages,
+    withInternalChangeHandler,
+    withLabel,
+} from '../../FormFields/New';
+import labelTypeClasses from './dataEntryFieldLabels.module.css';
+import { baseInputStyles } from './commonProps';
+import type { ErrorMessagesForRelatedStages } from '../RelatedStagesActions';
+import type { RelatedStageDataValueStates } from '../WidgetRelatedStages.types';
+import { LabelKeys, useTermLabel } from '../../../customLabels';
+
+type OrgUnitValue = {
+    checked: boolean;
+    id: string;
+    children: number;
+    displayName: string;
+    path: string;
+    selected: string[];
+};
+
+type Props = {
+    relatedStagesDataValues: RelatedStageDataValueStates;
+    onSelectOrgUnit: (orgUnit: OrgUnitValue) => void;
+    onDeselectOrgUnit: () => void;
+    saveAttempted: boolean;
+    errorMessages: ErrorMessagesForRelatedStages;
+};
+
+const OrgUnitFieldForForm = withDefaultFieldContainer()(
+    withLabel({
+        onGetCustomFieldLabeClass: () => labelTypeClasses.dateLabel,
+    })(
+        withDisplayMessages()(
+            withInternalChangeHandler()(
+                SingleOrgUnitSelectField,
+            ),
+        ),
+    ),
+);
+
+export const OrgUnitSelectorForRelatedStages = ({
+    relatedStagesDataValues,
+    onSelectOrgUnit,
+    onDeselectOrgUnit,
+    errorMessages,
+    saveAttempted,
+}: Props) => {
+    const [touched, setTouched] = useState(false);
+    const { orgUnitLabel } = useTermLabel([LabelKeys.orgUnitSingular]);
+
+    const handleSelect = (event: OrgUnitValue) => {
+        setTouched(true);
+        onSelectOrgUnit(event);
+    };
+
+    const handleDeselect = () => {
+        setTouched(true);
+        onDeselectOrgUnit();
+    };
+
+    const shouldShowError = (saveAttempted || touched);
+
+    return (
+        <OrgUnitFieldForForm
+            label={capitalizeFirstLetter(orgUnitLabel)}
+            value={relatedStagesDataValues.orgUnit}
+            required
+            onSelectClick={handleSelect}
+            onBlur={handleDeselect}
+            styles={baseInputStyles}
+            errorMessage={shouldShowError ? errorMessages?.orgUnit : undefined}
+            data-test="relates-stages-org-unit"
+        />
+    );
+};

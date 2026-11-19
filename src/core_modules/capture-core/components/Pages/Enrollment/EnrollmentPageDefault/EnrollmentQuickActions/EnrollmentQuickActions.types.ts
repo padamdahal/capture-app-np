@@ -1,0 +1,19 @@
+export type EventCount = { eventCount?: number };
+
+export type ProgramStage = {
+    id: string;
+    dataAccess: {
+        write: boolean;
+    };
+    repeatable: boolean;
+};
+
+export type Event = {
+    programStage: string;
+    status: 'ACTIVE' | 'COMPLETED' | 'SCHEDULE' | 'OVERDUE' | 'SKIPPED';
+};
+
+export type OwnProps = {
+    stages: Array<ProgramStage & EventCount>;
+    events: Array<Event>;
+};

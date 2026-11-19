@@ -1,0 +1,13 @@
+{
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*",
+        "build",
+        "buildzip",
+        "coverage",
+        "docs",
+        "i18n",
+        "public",
+        ".d2"
+    ]
+}

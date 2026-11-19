@@ -1,0 +1,64 @@
+import React, { useMemo } from 'react';
+import { spacers } from '@dhis2/ui';
+import { FlatList } from 'capture-ui';
+import { withStyles, type WithStyles } from 'capture-core-utils/styles';
+import { capitalizeFirstLetter } from 'capture-core-utils/string/capitalizeFirstLetter';
+import type { RenderFoundation } from '../../metaData';
+import { LabelKeys, useTermLabel } from '../../customLabels';
+import { getDataEntryDetails, Placements } from './utils/getDataEntryDetails';
+
+type OwnProps = {
+    linkedEvent: any;
+    dataValues: any;
+    formFoundation: RenderFoundation;
+};
+
+type Props = OwnProps & WithStyles<typeof styles>;
+
+const styles: Readonly<any> = {
+    container: {
+        padding: `${spacers.dp8} ${spacers.dp16}`,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: spacers.dp8,
+    },
+};
+
+const WidgetTwoEventWorkspacePlain = ({ linkedEvent, dataValues, formFoundation, classes }: Props) => {
+    const { orgUnitLabel: rawOrgUnitLabel } = useTermLabel([LabelKeys.orgUnitSingular], {
+        stageId: linkedEvent?.programStage,
+    });
+    const orgUnitLabel = capitalizeFirstLetter(rawOrgUnitLabel);
+    const dataEntryValues = useMemo(() => getDataEntryDetails(
+        linkedEvent,
+        formFoundation,
+        orgUnitLabel,
+    ), [linkedEvent, formFoundation, orgUnitLabel]);
+
+    const listValues = useMemo(() => {
+        const elements = formFoundation.getElements();
+
+        return elements.map((dataElement) => {
+            const value = dataValues[dataElement.id];
+            return {
+                key: dataElement.formName,
+                value: value ?? '',
+                reactKey: dataElement.id,
+            };
+        }).filter(Boolean);
+    }, [dataValues, formFoundation]);
+
+    return (
+        <div className={classes.container}>
+            <FlatList
+                list={[
+                    ...dataEntryValues[Placements.TOP],
+                    ...listValues,
+                    ...dataEntryValues[Placements.BOTTOM],
+                ]}
+            />
+        </div>
+    );
+};
+
+export const WidgetTwoEventWorkspaceComponent = withStyles(styles)(WidgetTwoEventWorkspacePlain);

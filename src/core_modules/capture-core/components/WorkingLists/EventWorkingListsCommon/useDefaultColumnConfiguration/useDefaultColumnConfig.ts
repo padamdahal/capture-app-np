@@ -1,0 +1,77 @@
+import { useMemo } from 'react';
+import { translatedStatusTypes } from 'capture-core/events/statusTypes';
+import i18n from '@dhis2/d2-i18n';
+import { capitalizeFirstLetter } from 'capture-core-utils/string/capitalizeFirstLetter';
+import type { ProgramStage } from '../../../../metaData';
+import { dataElementTypes as elementTypeKeys } from '../../../../metaData';
+import { LabelKeys, useTermLabel } from '../../../../customLabels';
+import { mainPropertyNames } from '../../../../events/mainPropertyNames.const';
+import type {
+    MainColumnConfig,
+    MetadataColumnConfig,
+    EventWorkingListsColumnConfigs,
+} from '..';
+
+
+const getDefaultMainConfig = (stage: ProgramStage, orgUnitLabel: string): Array<MainColumnConfig> => {
+    const baseFields = [{
+        id: mainPropertyNames.OCCURRED_AT,
+        visible: true,
+        type: elementTypeKeys.DATE,
+        header: stage.stageForm.getLabel(mainPropertyNames.OCCURRED_AT),
+    }, {
+        id: mainPropertyNames.ORGANISATION_UNIT,
+        visible: true,
+        type: elementTypeKeys.ORGANISATION_UNIT,
+        header: capitalizeFirstLetter(orgUnitLabel),
+        apiName: 'orgUnit',
+        filterHidden: true,
+    }, {
+        id: mainPropertyNames.EVENT_STATUS,
+        visible: true,
+        type: elementTypeKeys.TEXT,
+        header: i18n.t('Status'),
+        options: [
+            { text: i18n.t('Active'), value: 'ACTIVE' },
+            { text: i18n.t('Completed'), value: 'COMPLETED' },
+        ],
+        resolveValue: translatedStatusTypes,
+    }];
+
+    const optionalFields: any[] = [];
+    if (stage.enableUserAssignment) {
+        optionalFields.push({
+            id: mainPropertyNames.ASSIGNEE,
+            visible: true,
+            type: 'ASSIGNEE',
+            header: i18n.t('Assigned to'),
+            apiName: 'assignedUser',
+        });
+    }
+    return [...baseFields, ...optionalFields]
+        .map(field => ({
+            ...field,
+            isMainProperty: true,
+        })) as Array<MainColumnConfig>;
+};
+
+const getMetaDataConfig = (stage: ProgramStage): Array<MetadataColumnConfig> =>
+    stage
+        .stageForm
+        .getElements()
+        .map(({ id, displayInReports, type, formName, optionSet }) => ({
+            id,
+            visible: displayInReports,
+            type,
+            header: formName,
+            options: optionSet && optionSet.options.map(({ text, value }) => ({ text, value })),
+            multiValueFilter: !!optionSet || type === elementTypeKeys.BOOLEAN,
+        })) as Array<MetadataColumnConfig>;
+
+export const useDefaultColumnConfig = (stage: ProgramStage): EventWorkingListsColumnConfigs => {
+    const { orgUnitLabel } = useTermLabel([LabelKeys.orgUnitSingular], { stageId: stage.id });
+    return useMemo(() => [
+        ...getDefaultMainConfig(stage, orgUnitLabel),
+        ...getMetaDataConfig(stage),
+    ], [stage, orgUnitLabel]);
+};

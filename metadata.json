@@ -1,0 +1,6 @@
+{
+  "name": "DHIS2 Capture · AD & Nepali (BS)",
+  "description": "DHIS2 Tracker Enrollment and Event Capture workspace connecting to live DHIS2 servers with bidirectional AD and Nepali Bikram Sambat (BS) date pickers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

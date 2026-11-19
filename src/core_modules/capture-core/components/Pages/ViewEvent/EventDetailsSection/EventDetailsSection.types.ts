@@ -1,0 +1,12 @@
+import { ProgramStage } from 'capture-core/metaData';
+
+export type PlainProps = {
+    isEditEventPage?: boolean;
+    eventId: string;
+    onOpenEditEvent: (orgUnit: any, programCategory?: any) => void;
+    programStage: ProgramStage;
+    eventAccess: { read: boolean, write: boolean };
+    programId: string;
+    onBackToAllEvents: () => void;
+    showEditButton: boolean;
+};

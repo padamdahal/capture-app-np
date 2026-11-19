@@ -1,0 +1,109 @@
+import React from 'react';
+import { capitalizeFirstLetter } from 'capture-core-utils/string/capitalizeFirstLetter';
+import { LabelKeys, useTermLabel } from '../../../../customLabels';
+import { ScopeSelector, SingleLockedSelect, useReset } from '../../../ScopeSelector';
+import { TopBarActions } from '../../../TopBarActions';
+import type { Props } from './topBar.types';
+
+export const EnrollmentAddEventTopBar = ({
+    programId,
+    orgUnitId,
+    enrollmentId,
+    teiDisplayName,
+    trackedEntityName,
+    stageId,
+    stageName,
+    stageIcon,
+    eventDateLabel,
+    onSetOrgUnitId,
+    onResetOrgUnitId,
+    onResetProgramId,
+    onResetTeiId,
+    onResetEnrollmentId,
+    onResetStageId,
+    onResetEventId,
+    userInteractionInProgress,
+    enrollmentsAsOptions,
+}: Props) => {
+    const { reset } = useReset();
+    const { enrollmentLabel, programStageLabel } = useTermLabel(
+        [LabelKeys.enrollmentSingular, LabelKeys.programStageSingular],
+        { stageId },
+    );
+    return (
+        <ScopeSelector
+            selectedProgramId={programId}
+            selectedOrgUnitId={orgUnitId}
+            onSetOrgUnit={id => onSetOrgUnitId(id)}
+            onResetProgramId={() => onResetProgramId()}
+            onResetOrgUnitId={() => onResetOrgUnitId()}
+            isUserInteractionInProgress={userInteractionInProgress}
+            onStartAgain={() => reset()}
+            isReadOnlyOrgUnit
+            orgUnitTooltip
+        >
+            <SingleLockedSelect
+                displayOnly
+                ready={Boolean(teiDisplayName && trackedEntityName)}
+                onClear={() => onResetTeiId()}
+                options={[
+                    {
+                        label: teiDisplayName || '',
+                        value: 'alwaysPreselected',
+                    },
+                ]}
+                selectedValue="alwaysPreselected"
+                title={trackedEntityName || ''}
+                isUserInteractionInProgress={userInteractionInProgress}
+            />
+            <SingleLockedSelect
+                ready={Boolean(enrollmentsAsOptions)}
+                onClear={() => onResetEnrollmentId()}
+                options={enrollmentsAsOptions || []}
+                selectedValue={enrollmentId}
+                title={capitalizeFirstLetter(enrollmentLabel)}
+                isUserInteractionInProgress={userInteractionInProgress}
+            />
+            {stageName && (
+                <>
+                    <SingleLockedSelect
+                        displayOnly
+                        ready
+                        onClear={() => onResetStageId()}
+                        options={[
+                            {
+                                label: stageName,
+                                value: 'alwaysPreselected',
+                                icon: stageIcon,
+                            },
+                        ]}
+                        selectedValue="alwaysPreselected"
+                        title={capitalizeFirstLetter(programStageLabel)}
+                        isUserInteractionInProgress={userInteractionInProgress}
+                    />
+
+                    <SingleLockedSelect
+                        displayOnly
+                        ready
+                        onClear={() => onResetEventId()}
+                        options={[
+                            {
+                                label: '-',
+                                value: 'alwaysPreselected',
+                            },
+                        ]}
+                        selectedValue="alwaysPreselected"
+                        title={eventDateLabel || ''}
+                        isUserInteractionInProgress={userInteractionInProgress}
+                    />
+                </>
+            )}
+
+            <TopBarActions
+                selectedProgramId={programId}
+                selectedOrgUnitId={orgUnitId}
+                isUserInteractionInProgress={userInteractionInProgress}
+            />
+        </ScopeSelector>
+    );
+};

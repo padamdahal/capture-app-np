@@ -1,0 +1,54 @@
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import i18n from '@dhis2/d2-i18n';
+import type { Props } from './WidgetEventNote.types';
+import { requestAddNoteForEvent } from './WidgetEventNote.actions';
+import { WidgetNote } from '../WidgetNote';
+import { ReadOnlyBadge } from '../ReadOnlyBadge';
+import { useEnrollmentAccessContext } from '../Pages/common/EnrollmentOverviewDomain/EnrollmentAccessContext';
+import { LabelKeys, useTermLabel } from '../../customLabels';
+
+export const WidgetEventNote = ({ dataEntryKey, dataEntryId, programId, stageId }: Props) => {
+    const dispatch = useDispatch();
+    const notes = useSelector(({ dataEntriesNotes }: { dataEntriesNotes: Record<string, any[]> }) =>
+        dataEntriesNotes[`${dataEntryId}-${dataEntryKey}`] ?? []);
+    const {
+        currentStageWriteAccess,
+        trackedEntityTypeName,
+        showWidgetBadge,
+    } = useEnrollmentAccessContext();
+    const { eventLabel, noteLabel, notesLabel } = useTermLabel(
+        [LabelKeys.eventSingular, LabelKeys.noteSingular, LabelKeys.notePlural],
+        { stageId },
+    );
+
+    const onAddNote = (newNoteValue: string) => {
+        dispatch(requestAddNoteForEvent(dataEntryKey, dataEntryId, newNoteValue, programId, stageId));
+    };
+
+    return (
+        <div data-test="event-note-widget">
+            <WidgetNote
+                title={i18n.t('{{notesLabel}} about this {{eventLabel}}', { notesLabel, eventLabel })}
+                placeholder={i18n.t(
+                    'Write a {{noteLabel}} about this {{eventLabel}}',
+                    { eventLabel, noteLabel },
+                )}
+                emptyNoteMessage={i18n.t(
+                    "This {{eventLabel}} doesn't have any {{notesLabel}}",
+                    { eventLabel, notesLabel },
+                )}
+                noteLabel={noteLabel}
+                notes={notes}
+                readOnly={!currentStageWriteAccess}
+                badge={showWidgetBadge ? (
+                    <ReadOnlyBadge
+                        programStageWriteAccess={currentStageWriteAccess}
+                        trackedEntityName={trackedEntityTypeName}
+                    />
+                ) : null}
+                onAddNote={onAddNote}
+            />
+        </div>
+    );
+};

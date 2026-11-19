@@ -1,0 +1,78 @@
+import React, { useMemo, useState } from 'react';
+import i18n from '@dhis2/d2-i18n';
+import { IconDelete24, colors } from '@dhis2/ui';
+import { EventWorkingListsUpdateTrigger } from '../UpdateTrigger';
+import type { CustomRowMenuContents } from '../../WorkingListsBase';
+import type { Props } from './eventWorkingListsRowMenuSetup.types';
+import { useProgramExpiryForUser } from '../../../../hooks';
+import { isValidPeriod } from '../../../../utils/validation/validators/form';
+import { DeleteEventModal } from './DeleteEventModal';
+import { LabelKeys, useTermLabel } from '../../../../customLabels';
+
+export const EventWorkingListsRowMenuSetup = ({ onDeleteEvent, programId, stageId, ...passOnProps }: Props) => {
+    const expiryPeriod = useProgramExpiryForUser(programId);
+    const { eventLabel } = useTermLabel([LabelKeys.eventSingular], { stageId });
+    const [deleteModalOpen, setDeleteModalOpen] = useState(false);
+    const [eventIdToDelete, setEventIdToDelete] = useState<string | null>(null);
+
+    const handleOpenDeleteModal = (eventId: string) => {
+        setEventIdToDelete(eventId);
+        setDeleteModalOpen(true);
+    };
+
+    const handleCloseDeleteModal = () => {
+        setDeleteModalOpen(false);
+        setEventIdToDelete(null);
+    };
+
+    const handleConfirmDelete = (eventId: string) => {
+        onDeleteEvent(eventId);
+    };
+
+    const customRowMenuContents: CustomRowMenuContents = useMemo(() => [{
+        key: 'deleteEventItem',
+        clickHandler: ({ id }) => handleOpenDeleteModal(id),
+        icon: <IconDelete24 color={colors.red400} />,
+        label: i18n.t('Delete {{eventLabel}}', { eventLabel }),
+        tooltipContent: (row) => {
+            const { occurredAt } = row ?? {};
+            const { isWithinValidPeriod } = isValidPeriod(occurredAt, expiryPeriod);
+            return isWithinValidPeriod ? null : i18n.t(
+                '{{occurredAt}} belongs to an expired period. {{eventLabel}} cannot be deleted',
+                {
+                    occurredAt,
+                    eventLabel,
+                },
+            );
+        },
+        tooltipEnabled: (row) => {
+            const { occurredAt } = row ?? {};
+            const { isWithinValidPeriod } = isValidPeriod(occurredAt, expiryPeriod);
+            return !isWithinValidPeriod;
+        },
+        disabled: (row) => {
+            const { occurredAt } = row ?? {};
+            const { isWithinValidPeriod } = isValidPeriod(occurredAt, expiryPeriod);
+            return !isWithinValidPeriod;
+        },
+    }], [expiryPeriod, eventLabel]);
+
+
+    return (
+        <>
+            <EventWorkingListsUpdateTrigger
+                {...passOnProps}
+                programId={programId}
+                customRowMenuContents={customRowMenuContents}
+            />
+            {deleteModalOpen && eventIdToDelete && (
+                <DeleteEventModal
+                    eventId={eventIdToDelete}
+                    stageId={stageId}
+                    onClose={handleCloseDeleteModal}
+                    onConfirmDelete={handleConfirmDelete}
+                />
+            )}
+        </>
+    );
+};

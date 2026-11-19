@@ -1,0 +1,88 @@
+import type { ProgramCategory, CategoryOption } from './CategoryOptions/CategoryOptions.types';
+import type { UserFormField } from '../FormFields/UserField';
+
+export type Validation = {
+    error: boolean;
+    validationText: string;
+};
+
+export type InternalComponentError = {
+    error?: string;
+    errorCode?: string;
+};
+
+export type OrgUnitValue = {
+    id: string;
+    name?: string;
+    checked?: boolean;
+    children?: number;
+    displayName?: string;
+    path?: string;
+    selected?: string[];
+};
+
+export type ContainerProps = {
+   programId: string;
+   stageId: string;
+   eventData: any;
+   enrolledAt: string;
+   occurredAt: string;
+   orgUnitId: string;
+   teiId: string;
+   enrollmentId: string;
+   initialScheduleDate?: string;
+   hideDueDate?: boolean;
+   selectedCategories?: { [categoryId: string]: CategoryOption } | null;
+   programCategory?: ProgramCategory;
+   onSave: (eventServerValues: any, uid: string) => void;
+   onSaveSuccessActionType: string;
+   onSaveErrorActionType: string;
+   onCancel: () => void;
+   assignee?: UserFormField | null;
+   enableUserAssignment?: boolean;
+};
+
+export type Props = {
+   stageId: string;
+   eventData: any;
+   enrolledAt: string;
+   occurredAt: string;
+   displayDueDateLabel?: string | null;
+   orgUnit?: OrgUnitValue | null;
+   stageName: string;
+   programName: string;
+   scheduleDate?: string | null;
+   serverScheduleDate?: string | null;
+   suggestedScheduleDate?: string | null;
+   expiryPeriod?: {
+      expiryPeriodType: string | null;
+      expiryDays: number | null;
+   };
+   setScheduledOrgUnit: (orgUnit: OrgUnitValue | null) => void;
+   setIsFormValid: (valid: boolean) => void;
+   saveAttempted: boolean;
+   serverSuggestedScheduleDate?: string | null;
+   eventCountInOrgUnit: number;
+   notes: Array<{
+      value: string;
+      storedAt: string;
+      createdBy?: any;
+      note?: string;
+   }>;
+   hideDueDate?: boolean;
+   selectedCategories?: { [categoryId: string]: CategoryOption } | null;
+   programCategory?: ProgramCategory;
+   categoryOptionsError?: {[categoryId: string]: { touched: boolean; valid: boolean} } | null;
+   enableUserAssignment?: boolean;
+   onSchedule: () => void;
+   onSetAssignee: (user: any) => void;
+   assignee?: UserFormField | null;
+   onCancel: () => void;
+   setScheduleDate: (date: string | null) => void;
+   onAddNote: (note: string) => void;
+   onResetCategoryOption: (categoryId: string) => void;
+   onClickCategoryOption: (optionId: string, categoryId: string) => void;
+   validation?: Validation;
+   setValidation: (validation: Validation) => void;
+   setInternalComponentError: (error: InternalComponentError | undefined) => void;
+};

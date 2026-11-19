@@ -1,0 +1,76 @@
+import i18n from '@dhis2/d2-i18n';
+import { useMemo } from 'react';
+import { useSelector } from 'react-redux';
+import { LabelKeys, useTermLabel } from '../../../../customLabels';
+
+type Template = {
+    id: string;
+    name: string;
+    isDefault?: boolean;
+};
+
+type Props = {
+    programId: string;
+    displayFrontPageList: boolean;
+}
+
+const DefaultFilterKeys = {
+    DEFAULT: 'default',
+    ACTIVE: 'active',
+    COMPLETE: 'complete',
+    CANCELLED: 'cancelled',
+} as const;
+
+type DefaultFilterKey = typeof DefaultFilterKeys[keyof typeof DefaultFilterKeys];
+
+export const useWorkingListLabel = ({
+    programId,
+    displayFrontPageList,
+}: Props) => {
+    const { enrollmentsLabel } = useTermLabel([LabelKeys.enrollmentPlural]);
+    const workingListTemplates = useSelector((state: any) => state.workingListsTemplates?.teiList);
+    const workingListProgramId = useSelector((state: any) => state.workingListsContext?.teiList?.programIdView);
+
+    const { selectedTemplateId, loading: isLoadingTemplates, templates } = workingListTemplates ?? {};
+
+    const selectedTemplate: Template | undefined = templates?.find(({ id }) => id === selectedTemplateId);
+    const isSameProgram: boolean = workingListProgramId === programId;
+
+    const label: string = useMemo(() => {
+        if (isLoadingTemplates) return i18n.t('Loading...');
+
+        if (isSameProgram) {
+            if (selectedTemplate && !selectedTemplate.isDefault) {
+                return selectedTemplate.name;
+            }
+
+            if (selectedTemplateId && !selectedTemplate &&
+                DefaultFilterKeys[selectedTemplateId.toUpperCase() as keyof typeof DefaultFilterKeys]) {
+                const defaultFilterLabels: { [key in DefaultFilterKey]: string } = {
+                    [DefaultFilterKeys.DEFAULT]: i18n.t('Program overview'),
+                    [DefaultFilterKeys.ACTIVE]: i18n.t('Active {{enrollmentsLabel}}', { enrollmentsLabel }),
+                    [DefaultFilterKeys.COMPLETE]: i18n.t('Completed {{enrollmentsLabel}}', { enrollmentsLabel }),
+                    [DefaultFilterKeys.CANCELLED]: i18n.t('Cancelled {{enrollmentsLabel}}', { enrollmentsLabel }),
+                };
+                return defaultFilterLabels[selectedTemplateId as DefaultFilterKey];
+            }
+
+            return i18n.t('Program overview');
+        }
+
+        if (!displayFrontPageList) return i18n.t('Search');
+
+        return i18n.t('Program overview');
+    }, [
+        isLoadingTemplates,
+        isSameProgram,
+        selectedTemplate,
+        selectedTemplateId,
+        displayFrontPageList,
+        enrollmentsLabel,
+    ]);
+
+    return {
+        label,
+    };
+};

@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for redesigning the in-form Nepali BS date picker as a right-side calendar icon trigger with a floating top-right BS date pill overlapping the AD date input, plus converting DHIS2 Capture into the standalone custom app capture-app-np with a new UUID and installable bundle zip.",
+  "updatedAt":  "2026-11-18T16:03:11.827941277Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

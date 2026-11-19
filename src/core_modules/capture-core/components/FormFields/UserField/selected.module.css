@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+}
+
+.chipContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.inputContainer {
+    position: absolute;
+    inset: 0;
+}

@@ -1,0 +1,254 @@
+import React, { useEffect, useState } from 'react';
+import { dataEntryIds, dataEntryKeys } from 'capture-core/constants';
+import { useSelector } from 'react-redux';
+import {
+    spacersNum,
+    colors,
+    spacers,
+} from '@dhis2/ui';
+import { withStyles, type WithStyles } from 'capture-core-utils/styles';
+import type { ComponentProps } from './widgetEventEdit.types';
+import { Widget } from '../Widget';
+import { EditEventDataEntry } from './EditEventDataEntry/';
+import { ViewEventDataEntry } from './ViewEventDataEntry/';
+import { LoadingMaskElementCenter } from '../LoadingMasks';
+import { EventChangelogWrapper } from './EventChangelogWrapper';
+import { inMemoryFileStore } from '../DataEntry/file/inMemoryFileStore';
+import { WidgetHeader } from './WidgetHeader';
+import { WidgetTwoEventWorkspace, WidgetTwoEventWorkspaceWrapperTypes } from '../WidgetTwoEventWorkspace';
+import { getReadOnlyMessage } from '../ReadOnlyBadge';
+import {
+    useEnrollmentEditEventPageMode,
+    useAvailableProgramStages,
+    useEventEditPermissions,
+    useProgramExpiryForUser,
+} from '../../hooks';
+import { convertFormToClient } from '../../converters';
+import { dataElementTypes } from '../../metaData';
+import { LabelKeys, useTermLabel } from '../../customLabels';
+
+const styles: Readonly<any> = {
+    container: {
+        backgroundColor: 'white',
+        borderRadius: 3,
+        borderStyle: 'solid',
+        borderColor: colors.grey400,
+        borderWidth: 1,
+        '& > div:nth-child(2)': {
+            margin: spacersNum.dp16,
+            borderRadius: 3,
+            borderStyle: 'solid',
+            borderColor: colors.grey400,
+            borderWidth: 1,
+        },
+    },
+    header: {
+        display: 'flex',
+        alignItems: 'center',
+        padding: spacersNum.dp8,
+    },
+    icon: {
+        paddingInlineEnd: spacersNum.dp8,
+    },
+    form: {
+        padding: spacersNum.dp8,
+    },
+    menu: {
+        display: 'flex',
+        alignItems: 'center',
+        padding: spacersNum.dp8,
+        justifyContent: 'space-between',
+        background: colors.white,
+        borderTopLeftRadius: 3,
+        borderTopRightRadius: 3,
+        borderStyle: 'solid',
+        borderColor: colors.grey400,
+        borderWidth: 1,
+        borderBottomWidth: 0,
+    },
+    menuActions: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: spacers.dp4,
+    },
+    button: { margin: spacersNum.dp8 },
+    tooltip: { display: 'inline-flex' },
+};
+
+type Props = ComponentProps & WithStyles<typeof styles>;
+
+const WidgetEventEditPlain = ({
+    eventStatus,
+    initialScheduleDate,
+    stage,
+    formFoundation,
+    onCancelEditEvent,
+    onHandleScheduleSave,
+    onSaveExternal,
+    programId,
+    orgUnitId,
+    enrollmentId,
+    eventId,
+    stageId,
+    teiId,
+    assignee,
+    onSaveAndCompleteEnrollment,
+    onSaveAndCompleteEnrollmentSuccessActionType,
+    onSaveAndCompleteEnrollmentErrorActionType,
+    onDeleteEvent,
+    onDeleteEventRelationship,
+    classes,
+}: Props) => {
+    useEffect(() => inMemoryFileStore.clear, []);
+
+    const { currentPageMode } = useEnrollmentEditEventPageMode(eventStatus, eventId);
+    const [changeLogIsOpen, setChangeLogIsOpen] = useState(false);
+    // "Edit event"-button depends on loadedValues. Delay rendering component until loadedValues has been initialized.
+    const loadedValues = useSelector((state: any) => state.viewEventPage.loadedValues);
+    const orgUnit = loadedValues?.orgUnit;
+    const occurredAt = loadedValues?.dataEntryValues?.occurredAt;
+    const completedAt = loadedValues?.eventContainer?.event?.completedAt;
+    const scheduledAt = loadedValues?.eventContainer?.event?.scheduledAt;
+
+    const availableProgramStages = useAvailableProgramStages(stage, teiId, enrollmentId, programId);
+
+    const expiryPeriod = useProgramExpiryForUser(programId);
+    const {
+        isEventReadOnly, canToggleCompletion, canEditProgramStage,
+        isEventBlockedByExpiry, isEventBlockedByCompletion, isEventCompleted,
+    } = useEventEditPermissions({
+        programId,
+        stage,
+        eventStatus,
+        occurredAtClient: convertFormToClient(occurredAt, dataElementTypes.DATE) as string,
+        completedAtClient: completedAt,
+        scheduledAtClient: scheduledAt,
+    });
+    const { enrollmentLabel, programStageLabel, programStagesLabel, eventLabel } = useTermLabel(
+        [
+            LabelKeys.enrollmentSingular,
+            LabelKeys.programStageSingular,
+            LabelKeys.programStagePlural,
+            LabelKeys.eventSingular,
+        ],
+        { stageId },
+    );
+    const readOnlyMessage = getReadOnlyMessage({
+        programWriteAccess: true,
+        trackedEntityTypeWriteAccess: true,
+        programStageWriteAccess: true,
+        trackedEntityName: undefined,
+        multipleStages: false,
+        isEventBlockedByExpiry,
+        isEventBlockedByCompletion,
+        isEventCompleted,
+        canToggleCompletion,
+        trackedEntityInactive: false,
+        enrollmentLabel,
+        programStageLabel,
+        programStagesLabel,
+        eventLabel,
+    });
+
+    return orgUnit && loadedValues ? (
+        <div className={classes.container}>
+            <WidgetTwoEventWorkspace
+                type={WidgetTwoEventWorkspaceWrapperTypes.EDIT_EVENT}
+                currentPage={currentPageMode}
+                eventId={eventId}
+                programId={programId}
+                orgUnitId={orgUnitId}
+                stageId={stageId}
+                stage={stage}
+                onDeleteEvent={onDeleteEvent}
+                onDeleteEventRelationship={onDeleteEventRelationship}
+            />
+            <div data-test="widget-enrollment-event">
+                <Widget
+                    header={
+                        <WidgetHeader
+                            eventId={eventId}
+                            eventStatus={eventStatus}
+                            stage={stage}
+                            programId={programId}
+                            orgUnit={orgUnit}
+                            teiId={teiId}
+                            enrollmentId={enrollmentId}
+                            setChangeLogIsOpen={setChangeLogIsOpen}
+                            readOnly={isEventReadOnly}
+                            isEventBlockedByExpiry={isEventBlockedByExpiry}
+                            canToggleCompletion={canToggleCompletion}
+                            canEditProgramStage={canEditProgramStage}
+                            readOnlyMessage={readOnlyMessage}
+                        />
+                    }
+                    noncollapsible
+                    borderless
+                >
+                    <div className={classes.form}>
+                        {currentPageMode === dataEntryKeys.VIEW ? (
+                            <div
+                                className={classes.form}
+                                data-test={'widget-enrollment-event-view'}
+                            >
+                                <ViewEventDataEntry
+                                    programId={programId}
+                                    stageId={stageId}
+                                    formFoundation={formFoundation}
+                                    dataEntryId={dataEntryIds.ENROLLMENT_EVENT}
+                                    hideDueDate={stage.hideDueDate}
+                                />
+                            </div>
+                        ) : (
+                            <div
+                                className={classes.form}
+                                data-test={'widget-enrollment-event-edit'}
+                            >
+                                <EditEventDataEntry
+                                    dataEntryId={dataEntryIds.ENROLLMENT_EVENT}
+                                    formFoundation={formFoundation}
+                                    orgUnit={orgUnit}
+                                    programId={programId}
+                                    stageId={stageId}
+                                    teiId={teiId}
+                                    enrollmentId={enrollmentId}
+                                    expiryPeriod={expiryPeriod}
+                                    eventId={eventId}
+                                    eventStatus={eventStatus}
+                                    canToggleCompletion={canToggleCompletion}
+                                    onCancelEditEvent={onCancelEditEvent}
+                                    hasDeleteButton={!isEventBlockedByExpiry}
+                                    onHandleScheduleSave={onHandleScheduleSave}
+                                    onSaveExternal={onSaveExternal}
+                                    initialScheduleDate={initialScheduleDate}
+                                    allowGenerateNextVisit={stage.allowGenerateNextVisit}
+                                    askCompleteEnrollmentOnEventComplete={stage.askCompleteEnrollmentOnEventComplete}
+                                    availableProgramStages={availableProgramStages}
+                                    hideDueDate={stage.hideDueDate}
+                                    assignee={assignee}
+                                    onSaveAndCompleteEnrollmentExternal={onSaveAndCompleteEnrollment}
+                                    onSaveAndCompleteEnrollmentErrorActionType={
+                                        onSaveAndCompleteEnrollmentErrorActionType
+                                    }
+                                    onSaveAndCompleteEnrollmentSuccessActionType={
+                                        onSaveAndCompleteEnrollmentSuccessActionType
+                                    }
+                                />
+                            </div>
+                        )}
+                    </div>
+                </Widget>
+            </div>
+
+            {changeLogIsOpen && (
+                <EventChangelogWrapper
+                    isOpen
+                    setIsOpen={setChangeLogIsOpen}
+                    eventId={loadedValues.eventContainer.id}
+                    formFoundation={formFoundation}
+                />
+            )}
+        </div>
+    ) : <LoadingMaskElementCenter />;
+};
+export const WidgetEventEdit = withStyles(styles)(WidgetEventEditPlain);

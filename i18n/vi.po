@@ -1,0 +1,2342 @@
+# Translators:
+# Thuy Nguyen <thuynguyen@hispvietnam.org>, 2026
+# Philip Larsen Donnelly, 2026
+# Viktor Varland <viktor@dhis2.org>, 2026
+# Mai Nguyen <thanhmai.jica@gmail.com>, 2026
+# Em Le <em.hispvietnam@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2026-10-03T19:52:00.618Z\n"
+"PO-Revision-Date: 2019-06-27 07:31+0000\n"
+"Last-Translator: Em Le <em.hispvietnam@gmail.com>, 2026\n"
+"Language-Team: Vietnamese (https://app.transifex.com/hisp-uio/teams/100509/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "The application could not be loaded."
+msgstr ""
+
+msgid "Please verify that the server is running."
+msgstr ""
+
+msgid "Please see log for details."
+msgstr ""
+
+msgid "Choose one or more dates..."
+msgstr "Chọn một hoặc nhiều ngày..."
+
+msgid "Choose a date..."
+msgstr "Chọn một ngày..."
+
+msgid "Today"
+msgstr "Hôm Nay"
+
+msgid ""
+"A possible reason for this is that the browser or mode (e.g. privacy mode) "
+"is not supported. See log for details."
+msgstr ""
+"Lý do có thể do trình duyệt hoặc chế độ (ví dụ: chế độ bảo mật) không được "
+"hỗ trợ. Xem nhật ký để biết chi tiết."
+
+msgid "Please refresh the page (Either the server or the app version changed)"
+msgstr "Vui lòng làm mới trang (Máy chủ hoặc phiên bản ứng dụng đã thay đổi)"
+
+msgid "Bulk data entry"
+msgstr "Nhập dữ liệu hàng loạt"
+
+msgid "Program overview"
+msgstr "Tổng quan chương trình"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "Active {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "Completed {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "Cancelled {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "{{enrollmentLabel}} dashboard"
+msgstr ""
+
+msgid "View {{eventLabel}}"
+msgstr ""
+
+msgid "Edit {{eventLabel}}"
+msgstr "Chỉnh sửa {{eventLabel}}"
+
+msgid "New {{eventLabel}}"
+msgstr "{{eventLabel}} mới"
+
+msgid "Loading..."
+msgstr "Đang tải..."
+
+msgid "{{eventLabel}} list"
+msgstr "Danh sách {{eventLabel}}"
+
+msgid "More"
+msgstr "Thêm"
+
+msgid "View {{programName}} dashboard"
+msgstr "Xem bảng thông tin của {{programName}}"
+
+msgid "View dashboard"
+msgstr "Xem bảng thông tin"
+
+msgid "View active {{enrollmentLabel}}"
+msgstr ""
+
+msgid "Re-enroll in {{programName}}"
+msgstr ""
+
+msgid "Enrolled"
+msgstr "Đã đăng ký"
+
+msgid "Previously enrolled"
+msgstr "Đã đăng ký trước đây"
+
+msgid "Date of {{enrollmentLabel}}"
+msgstr ""
+
+msgid "Last updated"
+msgstr "Lần cập nhật cuối"
+
+msgid "Lat"
+msgstr "Vĩ độ"
+
+msgid "Long"
+msgstr "Kinh độ"
+
+msgid "lat{{escape}} {{latitudeValue}}"
+msgstr ""
+
+msgid "long{{escape}} {{longitudeValue}}"
+msgstr ""
+
+msgid "Show less"
+msgstr "Ẩn bớt"
+
+msgid "Show more"
+msgstr "Hiện thêm"
+
+msgid "error encountered during field validation"
+msgstr "gặp lỗi trong quá trình xác thực trường"
+
+msgid "error"
+msgstr "lỗi"
+
+msgid "This value is validating"
+msgstr "Giá trị này đang xác thực"
+
+msgid "Async field update failed"
+msgstr "Cập nhật trường không đồng bộ không thành công"
+
+msgid "Area"
+msgstr "Khu vực"
+
+msgid "Coordinate"
+msgstr "Tọa độ"
+
+msgid "{{eventLabel}} - {{categoryDisplayName}}"
+msgstr ""
+
+msgid "{{enrollmentLabel}} - {{categoryDisplayName}}"
+msgstr ""
+
+msgid "Complete {{eventLabel}}"
+msgstr ""
+
+msgid ""
+"The date entered belongs to an expired period. Enter a date after "
+"{{firstValidDate}}."
+msgstr ""
+"Ngày nhập thuộc về một khoảng thời gian đã hết hạn. Nhập một ngày sau "
+"{{firstValidDate}}."
+
+msgid "A value is required"
+msgstr "Yêu cầu có giá trị"
+
+msgid "Please provide a valid date"
+msgstr "Xin vui lòng cung cấp ngày đúng"
+
+msgid "{{ stageName }} - Basic info"
+msgstr "{{ stageName }}- Thông tin cơ bản"
+
+msgid "{{ stageName }} - Assignee"
+msgstr "{{ stageName }}- Cấp cho"
+
+msgid "{{ stageName }} - Status"
+msgstr "{{ stageName }}-Tình trạng"
+
+msgid "A date in the future is not allowed"
+msgstr "Không được phép nhập ngày trong tương lai"
+
+msgid ""
+"Saving a new {{enrollmentLabel}} in {{programName}} in {{orgUnitName}}."
+msgstr ""
+
+msgid "Saving a {{trackedEntityName}} in {{programName}} in {{orgUnitName}}."
+msgstr ""
+"Lưu một {{trackedEntityName}} trong {{programName}} tại {{orgUnitName}}"
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Metadata error. see log for details"
+msgstr "Lỗi siêu dữ liệu. xem nhật ký để biết chi tiết"
+
+msgid ""
+"The selected {{enrollmentLabel}} category options are not a valid "
+"combination."
+msgstr ""
+
+msgid "{{ stageName }} - Details"
+msgstr "{{ stageName }}- Chi tiết"
+
+msgid "{{ stageName }} - {{ sectionName }}"
+msgstr "{{ stageName }}-{{ sectionName }}"
+
+msgid "Assigned user"
+msgstr "Người dùng được chỉ định"
+
+msgid "Search for user"
+msgstr "Tìm kiếm người dùng"
+
+msgid "Saving to {{programName}} in {{orgUnitName}}"
+msgstr "Đang lưu vào {{programName}} tại {{orgUnitName}}"
+
+msgid "Saving to {{programName}}"
+msgstr "Đang lưu vào {{programName}}"
+
+msgid "Basic info"
+msgstr "Thông tin cơ bản"
+
+msgid "Status"
+msgstr "Tình trạng"
+
+msgid "Assignee"
+msgstr "Người nhận"
+
+msgid ""
+"This is not an event program or the metadata is corrupt. See log for "
+"details."
+msgstr ""
+"Đây không phải là chương trình sự kiện hoặc dữ liệu miêu tả bị hỏng. Xem log"
+" để biết thêm chi tiết."
+
+msgid "This {{eventLabel}}"
+msgstr ""
+
+msgid ""
+"{{relationshipLabel}} of type {{relationshipTypeName}} to {{entityName}} "
+"already exists"
+msgstr ""
+
+msgid "Active"
+msgstr "Đang hoạt động"
+
+msgid "Completed"
+msgstr "Đã hoàn tất"
+
+msgid ""
+"Please add or cancel the {{noteLabel}} before saving the {{eventLabel}}"
+msgstr ""
+
+msgid "Please provide a valid {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Save and add another"
+msgstr "Lưu và thêm sự kiện khác"
+
+msgid "Save and exit"
+msgstr "Lưu và đóng"
+
+msgid "Finish"
+msgstr "Hoàn tất"
+
+msgid "Save without completing"
+msgstr "Lưu nhưng không hoàn thành"
+
+msgid "Complete"
+msgstr "Hoàn tất"
+
+msgid "No write access"
+msgstr "Không có quyền viết"
+
+msgid "New {{titleText}}"
+msgstr "{{titleText}} mới"
+
+msgid "Switch to form view"
+msgstr "Chuyển sang xem biểu nhập"
+
+msgid "Switch to row view"
+msgstr "Chuyển sang xem dòng"
+
+msgid "{{count}} {{eventLabel}} added"
+msgid_plural "{{count}} {{eventLabel}} added"
+msgstr[0] ""
+
+msgid "No {{eventsLabel}} added"
+msgstr ""
+
+msgid "Adding {{relationshipLabel}} to {{eventLabel}}."
+msgstr ""
+
+msgid "Go back to {{eventLabel}} without saving {{relationshipLabel}}"
+msgstr ""
+
+msgid "New {{eventLabel}} {{relationshipLabel}}"
+msgstr ""
+
+msgid "Discard unsaved changes?"
+msgstr "Hủy bỏ các thay đổi?"
+
+msgid ""
+"Leaving this page will discard the selections you made for a new "
+"{{relationshipLabel}}"
+msgstr ""
+
+msgid "Yes, discard changes"
+msgstr "Có, hủy các thay đổi"
+
+msgid "No, cancel"
+msgstr "Không"
+
+msgid ""
+"You don't have access to create an {{eventLabel}} in the current selections"
+msgstr ""
+
+msgid "Saving a {{trackedEntityName}}"
+msgstr "Đang lưu {{trackedEntityName}}"
+
+msgid "without"
+msgstr "không có"
+
+msgid "enrollment"
+msgstr "đăng ký"
+
+msgid "in"
+msgstr "trong"
+
+msgid "Enroll in a program by selecting a program from the top bar."
+msgstr ""
+"Đăng ký chương trình bằng cách chọn một chương trình từ thanh trên cùng."
+
+msgid "An error has occurred. See log for details"
+msgstr "Một lỗi đã xảy ra. Xem nhật ký để biết chi tiết"
+
+msgid "{{programStageName}} completed"
+msgstr "{{programStageName}} đã hoàn thành"
+
+msgid ""
+"Would you like to complete the {{enrollmentLabel}} and all active "
+"{{eventsLabel}} as well?"
+msgstr ""
+
+msgid "{{count}} {{eventLabel}} in {{programStageName}}"
+msgid_plural "{{count}} {{eventLabel}} in {{programStageName}}"
+msgstr[0] ""
+
+msgid "Yes, complete {{enrollmentLabel}} and {{eventsLabel}}"
+msgstr ""
+
+msgid "Complete {{enrollmentLabel}} only"
+msgstr ""
+
+msgid "Would you like to complete the {{enrollmentLabel}}?"
+msgstr ""
+
+msgid "Complete {{enrollmentLabel}}"
+msgstr ""
+
+msgid "A duplicate exists (but there were some errors, see log for details"
+msgstr ""
+"Tồn tại một bản sao (nhưng có một số lỗi, hãy xem nhật ký để biết chi tiết)"
+
+msgid ""
+"An item with this {{attributeName}} is already registered, but you don't "
+"have access to it"
+msgstr ""
+"Một mục có {{attributeName}} này đã được đăng ký, nhưng bạn không có quyền "
+"truy cập vào nó"
+
+msgid "You have already registered this {{attributeName}}"
+msgstr "Bạn đã đăng ký {{attributeName}} này"
+
+msgid ""
+"A {{trackedEntityTypeName}} with this {{attributeName}} is already "
+"registered"
+msgstr "{{trackedEntityTypeName}} với {{attributeName}} này đã được đăng ký"
+
+msgid "Show registered {{trackedEntityTypeName}}"
+msgstr "Hiển thị {{trackedEntityTypeName}} đã đăng ký"
+
+msgid "Registered person"
+msgstr "Người đã đăng ký"
+
+msgid "No item selected"
+msgstr ""
+
+msgid "Form foundation missing. See log for details"
+msgstr ""
+
+msgid "validation failed"
+msgstr "xác thực không thành công"
+
+msgid "No feedback for this {{eventLabel}} yet"
+msgstr ""
+
+msgid "No indicator output for this {{eventLabel}} yet"
+msgstr ""
+
+msgid "Generate new {{eventLabel}}"
+msgstr ""
+
+msgid "Do you want to create another {{eventLabel}}?"
+msgstr ""
+
+msgid "Yes, create new {{eventLabel}}"
+msgstr ""
+
+msgid "Back to form"
+msgstr "Quay lại biểu mẫu"
+
+msgid "Save anyway"
+msgstr "Lưu bằng mọi cách"
+
+msgid "Validation errors and warnings"
+msgstr "Lỗi xác thực và cảnh báo"
+
+msgid "Validation errors"
+msgstr "Lỗi xác thực"
+
+msgid "Validation warnings"
+msgstr "Cảnh báo tính hợp lệ"
+
+msgid "Some operations are still running. Please wait."
+msgstr ""
+
+msgid "Operations running"
+msgstr "Hoạt động đang chạy"
+
+msgid "Please select {{categoryName}}"
+msgstr "Hãy chọn {{categoryName}}"
+
+msgid "No feedback for this {{enrollmentLabel}} yet"
+msgstr ""
+
+msgid "No indicator output for this {{enrollmentLabel}} yet"
+msgstr ""
+
+msgid "View changelog"
+msgstr "Xem những thay đổi"
+
+msgid "An error occurred when updating {{eventLabel}} status"
+msgstr ""
+
+msgid "Mark incomplete"
+msgstr "Đánh dấu là chưa hoàn thành"
+
+msgid "Mark complete"
+msgstr "Đánh dấu hoàn thành"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "An error occurred while deleting the {{eventLabel}}"
+msgstr ""
+
+msgid "Delete {{eventLabel}}"
+msgstr "Xóa {{eventLabel}}"
+
+msgid "Deleting an {{eventLabel}} is permanent and cannot be undone."
+msgstr ""
+
+msgid "Are you sure you want to delete this {{eventLabel}}?"
+msgstr ""
+
+msgid "Yes, delete {{eventLabel}}"
+msgstr "Có, xóa {{eventLabel}}"
+
+msgid "Unskip"
+msgstr "Quay lại"
+
+msgid "Skip"
+msgstr "Bỏ qua"
+
+msgid "Close"
+msgstr "Đóng lại"
+
+msgid "Please select the user"
+msgstr "Vui lòng chọn người dùng"
+
+msgid "Me"
+msgstr "Tôi"
+
+msgid "Anyone"
+msgstr "Bất kỳ ai"
+
+msgid "None"
+msgstr "Không"
+
+msgid "Select user"
+msgstr "Chọn người dùng"
+
+msgid "Please specify a range"
+msgstr ""
+
+msgid "Start date must be before the end date"
+msgstr ""
+
+msgid "From"
+msgstr "Từ"
+
+msgid "to"
+msgstr "thành"
+
+msgid "To"
+msgstr "Đến"
+
+msgid "Period"
+msgstr "Thời điểm"
+
+msgid "Please provide zero or a positive integer"
+msgstr "Vui lòng cung cấp số 0 hoặc số nguyên dương"
+
+msgid "Please specify the number of days"
+msgstr ""
+
+msgid "Days in the past"
+msgstr "Ngày trong quá khứ"
+
+msgid "Days in the future"
+msgstr "Ngày ở tương lai"
+
+msgid "This week"
+msgstr "Tuần này"
+
+msgid "This month"
+msgstr "Tháng này"
+
+msgid "This year"
+msgstr "Năm nay"
+
+msgid "Last week"
+msgstr "Tuần trước"
+
+msgid "Last month"
+msgstr "Tháng trước"
+
+msgid "Last 3 months"
+msgstr "3 tháng trước"
+
+msgid "Absolute range"
+msgstr "Phạm vi tuyệt đối"
+
+msgid "Relative range"
+msgstr "Phạm vi tương đối"
+
+msgid "Please specify a date"
+msgstr ""
+
+msgid "The \"Before\" value must be after the \"After\" value"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "Date"
+msgstr "Ngày"
+
+msgid "Time"
+msgstr "Thời gian"
+
+msgid "Before"
+msgstr ""
+
+msgid "Is empty"
+msgstr ""
+
+msgid "Is not empty"
+msgstr ""
+
+msgid "Minimum value cannot be greater than maximum value"
+msgstr ""
+
+msgid "Please provide a valid number"
+msgstr "Vui lòng cung cấp một số hợp lệ"
+
+msgid "Please provide a valid integer"
+msgstr "Vui lòng cung cấp một số nguyên hợp lệ"
+
+msgid "Please provide an integer between 0 and 100"
+msgstr "Hãy nhập giá trị số nguyên giữa 0 và 100"
+
+msgid "Please provide a positive integer"
+msgstr "Vui lòng cung cấp một số nguyên dương"
+
+msgid "Please provide a negative integer"
+msgstr "Vui lòng cung cấp một số nguyên âm"
+
+msgid "Min"
+msgstr "Nhỏ nhất"
+
+msgid "Max"
+msgstr "Lớn nhất"
+
+msgid "Yes"
+msgstr "Có"
+
+msgid "Uploading file"
+msgstr "Đang tải tập tin lên"
+
+msgid "selected"
+msgstr "đã chọn"
+
+msgid "Select file"
+msgstr "Chọn tập tin"
+
+msgid "No"
+msgstr "Không"
+
+msgid "Uploading image"
+msgstr "Đang tải ảnh lên"
+
+msgid "Select image"
+msgstr "Chọn ảnh"
+
+msgid "Type to filter options"
+msgstr "Nhập để lọc tùy chọn"
+
+msgid "No match found"
+msgstr "Không tìm thấy kết quả phù hợp"
+
+msgid "Search for an {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Clear"
+msgstr "Xóa"
+
+msgid "No results found"
+msgstr "Không tìm thấy kết quả nào"
+
+msgid "Description"
+msgstr "Miêu tả"
+
+msgid "URL"
+msgstr "Đường dẫn URL"
+
+msgid "Icon for {{field}}"
+msgstr "Biểu tượng cho {{field}}"
+
+msgid "start typing to search"
+msgstr "bắt đầu nhập để tìm kiếm"
+
+msgid "suggestions could not be retrieved"
+msgstr "đề xuất không thể được truy xuất"
+
+msgid "Data for offline list not present"
+msgstr "Dữ liệu cho danh sách ngoại tuyến không hiển thị"
+
+msgid "No items to display"
+msgstr "Không có mục để hiển thị"
+
+msgid "Tracked entity is deactivated"
+msgstr ""
+
+msgid "Select columns"
+msgstr "Chọn cột"
+
+msgid "Columns to show in table"
+msgstr "Cột hiển thị trong bảng"
+
+msgid "Save"
+msgstr "Lưu lại"
+
+msgid "Column"
+msgstr "Cột"
+
+msgid "Visible"
+msgstr "Hiển thị"
+
+msgid "Update"
+msgstr "Cập nhật"
+
+msgid "Reset filter"
+msgstr "Làm mới bộ lọc"
+
+msgid "Remove filter"
+msgstr "Xóa bộ lọc"
+
+msgid "Minimum characters to search is too high for this filter."
+msgstr ""
+
+msgid "Please enter at least {{minCharactersToSearch}} character to filter"
+msgid_plural ""
+"Please enter at least {{minCharactersToSearch}} character to filter"
+msgstr[0] ""
+
+msgid "Locked to{{escape}} {{buttonText}}"
+msgstr ""
+
+msgid "{{fromDate}} to {{toDate}}"
+msgstr "{{fromDate}} đến {{toDate}}"
+
+msgid "after or equal to {{date}}"
+msgstr "sau hoặc bằng {{date}}"
+
+msgid "before or equal to {{date}}"
+msgstr "trước hoặc bằng {{date}}"
+
+msgid "{{start}} days in the past to {{end}} days in the future"
+msgstr ""
+
+msgid "{{from}} to {{to}}"
+msgstr ""
+
+msgid "greater than or equal to {{value}}"
+msgstr ""
+
+msgid "less than or equal to {{value}}"
+msgstr ""
+
+msgid "after or equal to"
+msgstr "sau hoặc bằng"
+
+msgid "before or equal to"
+msgstr "trước hoặc bằng"
+
+msgid "More filters"
+msgstr "Thêm bộ lọc"
+
+msgid "{{programStageLabel}} filters"
+msgstr ""
+
+msgid "Rows per page"
+msgstr "Số dòng mỗi trang"
+
+msgid "Could not get {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Program doesn't exist"
+msgstr "Chương trình không tồn tại"
+
+msgid "Selected program is invalid for selected {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Add {{noteLabel}}"
+msgstr ""
+
+msgid "Write {{noteLabel}}"
+msgstr ""
+
+msgid "{{fieldName}} was blanked out and hidden by your last action"
+msgstr ""
+
+msgid "Notice"
+msgstr "Thông báo"
+
+msgid "Close the notice"
+msgstr "Đóng thông báo"
+
+msgid "Quick actions"
+msgstr "Hành động nhanh"
+
+msgid "Schedule an {{eventLabel}}"
+msgstr ""
+
+msgid "Make referral"
+msgstr "Tạo chuyển tuyến"
+
+msgid "No available {{programStagesLabel}}"
+msgstr ""
+
+msgid "Invalid {{enrollmentLabel}} id {{enrollmentId}}."
+msgstr ""
+
+msgid "Choose an {{enrollmentLabel}} to view the dashboard."
+msgstr ""
+
+msgid ""
+"Choose a program to add new or see existing {{enrollmentsLabel}} for "
+"{{teiDisplayName}}"
+msgstr ""
+
+msgid ""
+"{{programName}} has categories. Choose all categories to view dashboard."
+msgstr ""
+"{{programName}} có phân tổ. Hãy chọn tất cả phân tổ để xem Bảng thông tin "
+"của chương trình này."
+
+msgid "There are no active {{enrollmentsLabel}}."
+msgstr ""
+
+msgid "Add new {{enrollmentLabel}} for {{teiDisplayName}} in this program."
+msgstr ""
+
+msgid "{{teiDisplayName}} is not enrolled in this program."
+msgstr "{{teiDisplayName}} không có đăng ký tham gia vào chương trình này."
+
+msgid "Enroll {{teiDisplayName}} in this program."
+msgstr "Đăng ký {{teiDisplayName}}vào chương trình này."
+
+msgid ""
+"{{teiDisplayName}} is a {{tetName}} and cannot be enrolled in the "
+"{{programName}}. Choose another program that allows {{tetName}} "
+"{{enrollmentLabel}}. "
+msgstr ""
+
+msgid "Enroll a new {{selectedTetName}} in this program."
+msgstr "Đăng ký một {{selectedTetName}} mới vào chương trình này."
+
+msgid ""
+"{{programName}} is an event program and does not have {{enrollmentsLabel}}."
+msgstr ""
+
+msgid "Create a new {{eventLabel}} in this program."
+msgstr ""
+
+msgid "View working list in this program."
+msgstr "Xem danh sách cá thể trong chương trình này."
+
+msgid "{{enrollmentLabel}} with id \"{{enrollmentId}}\" does not exist"
+msgstr ""
+
+msgid "Tracked entity instance with id \"{{teiId}}\" does not exist"
+msgstr "Cá thể với mã id \"{{teiId}}\" không tồn tại"
+
+msgid "Program with id \"{{programId}}\" does not exist"
+msgstr "Chương trình với mã id \"{{programId}}\" không tồn tại"
+
+msgid ""
+"An error occurred while fetching {{enrollmentsLabel}}. Please enter a valid "
+"url."
+msgstr ""
+
+msgid "An error has occurred"
+msgstr "một lỗi đã xảy ra"
+
+msgid "Page is missing required values from URL"
+msgstr "Trang này đang thiếu giá trị bắt buộc từ URL"
+
+msgid "There was an error opening the Page"
+msgstr "Có lỗi khi mở trang"
+
+msgid "There was an error loading the page"
+msgstr "Có lỗi khi tải trang"
+
+msgid "{{programStageLabel}} is invalid"
+msgstr ""
+
+msgid "{{programStageLabel}} not found"
+msgstr ""
+
+msgid "Report"
+msgstr "Báo cáo"
+
+msgid "Schedule"
+msgstr "Lịch biểu"
+
+msgid "Refer"
+msgstr "Tham chiếu"
+
+msgid "You can't add any more {{ programStageName }} {{eventsLabel}}"
+msgstr ""
+
+msgid "Cancel without saving"
+msgstr "Hủy và không lưu"
+
+msgid "Choose a {{programStageLabel}} for a new {{eventLabel}}"
+msgstr ""
+
+msgid "{{programStagesLabel}} could not be loaded"
+msgstr ""
+
+msgid "The category option is not valid for the selected {{orgUnitLabel}}."
+msgstr ""
+
+msgid "Please select a valid combination."
+msgstr ""
+
+msgid "Get started with Capture app"
+msgstr "Bắt đầu với ứng dụng Nhập liệu"
+
+msgid "Report data"
+msgstr "Báo cáo dữ liệu"
+
+msgid ""
+"Choose a program and organisation unit to see existing data and create new "
+"records."
+msgstr ""
+"Chọn một chương trình và đơn vị tổ chức để xem dữ liệu hiện có và tạo bản "
+"ghi mới."
+
+msgid "Click 'Search'. For program-specific results, choose a program first."
+msgstr ""
+"Nhấp vào 'Tìm kiếm'. Để có kết quả cụ thể cho từng chương trình, trước tiên "
+"hãy chọn một chương trình."
+
+msgid "Learn more about Capture app"
+msgstr "Tìm hiểu thêm về ứng dụng Nhập liệu"
+
+msgid "Please select {{category}}."
+msgstr "Hãy chọn {{category}}"
+
+msgid "Please select an {{orgUnitLabel}}"
+msgstr ""
+
+msgid "See working list without {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Search for a {{trackedEntityName}}"
+msgstr ""
+
+msgid "Registered {{eventsLabel}}"
+msgstr ""
+
+msgid ""
+"You don't have access to create a {{trackedEntityName}} in the current "
+"selections"
+msgstr ""
+"Bạn không có quyền tạo một {{trackedEntityName}} cho lựa chọn hiện tại"
+
+msgid "Choose an {{orgUnitLabel}} to start reporting"
+msgstr ""
+
+msgid "Choose the {{missingCategories}} to start reporting"
+msgstr "Chọn {{missingCategories}} để bắt đầu báo cáo"
+
+msgid "Save as new"
+msgstr "Lưu mới"
+
+msgid "New"
+msgstr "Mới"
+
+msgid ""
+"You can also choose a program from the top bar and create in that program"
+msgstr ""
+"Bạn có thể chọn một chương trình từ thanh trên cùng và tạo trong chương "
+"trình đó"
+
+msgid "New {{enrollmentLabel}} in program{{escape}} {{programName}}"
+msgstr ""
+
+msgid "Save {{trackedEntityTypeName}}"
+msgstr "Lưu {{trackedEntityTypeName}}"
+
+msgid "Save {{trackedEntityName}}"
+msgstr "Lưu {{trackedEntityName}}"
+
+msgid ""
+"Enter details now is not available when creating a {{relationshipLabel}}"
+msgstr ""
+
+msgid "Save new {{trackedEntityTypeName}} and link"
+msgstr "Lưu {{trackedEntityTypeName}} mới và liên kết"
+
+msgid "Link"
+msgstr "Liên kết"
+
+msgid "Save as new {{trackedEntityName}}"
+msgstr "Lưu {{trackedEntityName}} mới"
+
+msgid "Some programs are being filtered."
+msgstr "Chương trình đang được lọc"
+
+msgid "Show all"
+msgstr "Hiển thị tất cả"
+
+msgid "Program"
+msgstr "Chương trình"
+
+msgid "Registration"
+msgstr "Đăng ký"
+
+msgid "Search results"
+msgstr "Kết quả tìm kiếm"
+
+msgid "No {{trackedEntityTypeName}} found."
+msgstr "Không tìm thấy {{trackedEntityTypeName}}."
+
+msgid "New search"
+msgstr "Tìm kiếm mới"
+
+msgid "Edit search"
+msgstr "Chỉnh sửa tìm kiếm"
+
+msgid "Link to an existing {{trackedEntityType}}"
+msgstr "Liên kết đến {{trackedEntityType}} hiện có"
+
+msgid "Create new {{trackedEntityType}}"
+msgstr "Tạo {{trackedEntityType}} mới"
+
+msgid "Register"
+msgstr "Đăng ký"
+
+msgid "Back"
+msgstr "Trở lại"
+
+msgid "{{count}} {{eventLabel}}"
+msgid_plural "{{count}} {{eventLabel}}"
+msgstr[0] ""
+
+msgid "{{eventLabel}} details"
+msgstr ""
+
+msgid ""
+"Leaving this page will discard any selections you made for a new "
+"{{relationshipLabel}}"
+msgstr ""
+
+msgid "Errors"
+msgstr "Lỗi"
+
+msgid "This {{eventLabel}} doesn't have any {{notesLabel}}"
+msgstr ""
+
+msgid "This {{eventLabel}} doesn't have any {{relationshipsLabel}}"
+msgstr ""
+
+msgid "Warnings"
+msgstr "Cảnh báo"
+
+msgid "{{eventLabel}} could not be loaded. Are you sure it exists?"
+msgstr ""
+
+msgid "{{eventLabel}} could not be loaded"
+msgstr ""
+
+msgid ""
+"Could not load the requested data. It may not exist or you may not have "
+"access."
+msgstr ""
+
+msgid "{{orgUnitLabel}} could not be loaded"
+msgstr ""
+
+msgid "tracked entity instance"
+msgstr "thực thể được theo dõi"
+
+msgid "All accessible"
+msgstr "Tất cả có thể truy cập"
+
+msgid "Selected"
+msgstr "Danh sách đã chọn"
+
+msgid "Please select an {{orgUnitLabel}}."
+msgstr ""
+
+msgid "{{orgUnitLabel}} scope"
+msgstr ""
+
+msgid "Selected program"
+msgstr "Chương trình đã chọn"
+
+msgid "Search {{uniqueAttrName}}"
+msgstr "Tìm kiếm {{uniqueAttrName}}"
+
+msgid "Search by {{attributesLabel}}"
+msgstr "Tìm bởi {{attributesLabel}}"
+
+msgid "Fill in at least {{count}} {{attributeLabel}} to search"
+msgid_plural "Fill in at least {{count}} {{attributeLabel}} to search"
+msgstr[0] ""
+
+msgid "Search {{attributeName}}"
+msgstr "Tìm kiếm {{attributeName}}"
+
+msgid "Missing search criteria"
+msgstr "Tiêu chí tìm kiếm bị thiếu"
+
+msgid "Please fill in {{uniqueTEAName}} to search"
+msgstr ""
+
+msgid "Back to search"
+msgstr "Quay lại tìm kiếm"
+
+msgid "Search form is missing. See log for details"
+msgstr ""
+
+msgid "Could not retrieve metadata. Please try again later."
+msgstr "Không thể lấy thông tin dữ liệu mô tả. Hãy thử lại sau."
+
+msgid "The {{enrollmentLabel}} {{eventLabel}} data could not be found"
+msgstr ""
+
+msgid "Loading"
+msgstr "Đang tải"
+
+msgid "An error occurred while loading the form"
+msgstr "Có lỗi khi tải biểu nhập"
+
+msgid "First Page"
+msgstr ""
+
+msgid "Previous Page"
+msgstr ""
+
+msgid "Next Page"
+msgstr ""
+
+msgid "Possible duplicates found"
+msgstr "Có thể tìm thấy các dữ liệu trùng"
+
+msgid "An error occurred loading possible duplicates"
+msgstr "Có lỗi khi tải các dữ liệu có khả năng trùng"
+
+msgid "View only - {{message}}"
+msgstr ""
+
+msgid "View only"
+msgstr "Chỉ xem"
+
+msgid "You only have view access to this {{enrollmentLabel}}"
+msgstr ""
+
+msgid "You only have view access to this program"
+msgstr ""
+
+msgid "You only have view access to this {{trackedEntityName}}"
+msgstr ""
+
+msgid "You only have view access to this tracked entity type"
+msgstr ""
+
+msgid "You only have view access to these {{programStagesLabel}}"
+msgstr ""
+
+msgid "You only have view access to this {{programStageLabel}}"
+msgstr ""
+
+msgid "This {{eventLabel}} is outside the editing period"
+msgstr ""
+
+msgid "This {{eventLabel}} has been completed"
+msgstr ""
+
+msgid "You do not have access to uncomplete this {{eventLabel}}"
+msgstr ""
+
+msgid "This {{trackedEntityName}} is deactivated"
+msgstr ""
+
+msgid "This tracked entity is deactivated"
+msgstr ""
+
+msgid "Add {{relationshipLabel}}"
+msgstr ""
+
+msgid "No results found for "
+msgstr "Không tìm thấy kết quả cho"
+
+msgid "Choose an {{orgUnitLabel}} in the form below"
+msgstr ""
+
+msgid "None selected"
+msgstr "Chưa lựa chọn"
+
+msgid "Choose an {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Choose a {{categoryName}}"
+msgstr "Chọn một {{categoryName}}"
+
+msgid "Search for a {{categoryName}}"
+msgstr ""
+
+msgid "Clear selection"
+msgstr "Bỏ chọn"
+
+msgid "No programs available."
+msgstr "Không có chương trình"
+
+msgid "Search for a program"
+msgstr "Tìm kiếm một chương trình"
+
+msgid "Some programs are being filtered by the chosen organisation unit"
+msgstr "Một vài chương trình đang được lọc bởi đơn vị được chọn"
+
+msgid "Show all programs"
+msgstr "Hiện tất cả chương trình"
+
+msgid "Choose a program"
+msgstr "Chọn một chương trình"
+
+msgid "Choose a {{title}}"
+msgstr "Chọn một {{title}}"
+
+msgid "Search for a {{title}}"
+msgstr ""
+
+msgid ""
+"You can also select a program from the top bar to search within that "
+"program."
+msgstr ""
+
+msgid "Choose a type to start searching"
+msgstr "Chọn một loại để bắt đầu tìm kiếm"
+
+msgid "{{trackedEntityName}} has no searchable {{attributesLabel}}"
+msgstr ""
+
+msgid ""
+"Try selecting a different tracked entity type, or try searching in a program"
+" by choosing one from the top bar."
+msgstr ""
+
+msgid "Search for {{titleText}}"
+msgstr "Tìm cho {{titleText}}"
+
+msgid "Search {{name}}"
+msgstr "Tim kiêm {{name}}"
+
+msgid "Search by {{name}}"
+msgstr "Tìm bởi {{name}}"
+
+msgid "all programs"
+msgstr "tất cả chương trình"
+
+msgid ""
+"Not finding the results you were looking for? Try searching in all programs."
+msgstr ""
+"Không tìm thấy kết quả bạn đang tìm kiếm? Hãy thử tìm trong tất cả chương "
+"trình."
+
+msgid "No searchable {{attributesLabel}} for {{trackedEntityName}}"
+msgstr ""
+
+msgid "Search in all programs"
+msgstr "Tìm kiếm trong tất cả các chương trình"
+
+msgid ""
+"If none of search results match, you can create a new {{trackedEntityName}}."
+msgstr ""
+"Nếu không có kết quả nào được tìm thấy, bạn có thể tạo một "
+"{{trackedEntityName}} mới"
+
+msgid "Create new"
+msgstr "Tạo mới"
+
+msgid "Fill in these fields to search{{escape}} {{ searchableAttributes }}"
+msgstr "Điền vào các ô để tìm kiếm{{escape}}{{ searchableAttributes }}"
+
+msgid ""
+"Fill in at least {{minAttributesRequiredToSearch}} of these fields to "
+"search{{escape}} {{searchableAttributes}}"
+msgstr ""
+"Điền vào ít nhất {{minAttributesRequiredToSearch}} ô để tìm tìm kiếm "
+"{{escape}}{{searchableAttributes}}"
+
+msgid ""
+"Fill in this {{attributeLabel}} to search{{escape}} {{searchableAttributes}}"
+msgstr ""
+
+msgid ""
+"You can change your search terms and search again to find what you are "
+"looking for."
+msgstr ""
+"Bạn có thể thay đổi cụm từ tìm kiếm của mình và tìm kiếm lại để tìm những gì"
+" bạn muốn."
+
+msgid "Create new {{trackedEntityName}}"
+msgstr "Tạo {{trackedEntityName}} mới"
+
+msgid ""
+"There is a problem with this search, please change the search terms or try "
+"again later."
+msgstr ""
+
+msgid "For more details open the Console tab of the Developer tools"
+msgstr ""
+
+msgid "Too many results"
+msgstr "Quá nhiều kết quả"
+
+msgid "This search returned too many results to show."
+msgstr ""
+
+msgid ""
+"Try changing search terms or searching by more {{attributesLabel}} to narrow"
+" down the results."
+msgstr ""
+
+msgid "Cannot search in all programs"
+msgstr "Không thể tìm trong tất cả chương trình"
+
+msgid "Results found in {{currentSearchScopeName}}"
+msgstr ""
+
+msgid "Results found"
+msgstr "Kết quả tìm thấy"
+
+msgid "Saved lists in this program"
+msgstr "Lưu danh sách trong chương trình này"
+
+msgid "Saved lists offer quick access to your most used views in a program."
+msgstr ""
+"Danh sách đã lưu cung cấp quyền truy cập nhanh vào các chế độ xem được sử "
+"dụng nhiều nhất trong một chương trình."
+
+msgid ""
+"There are no saved lists in this program yet, create one using the button "
+"below."
+msgstr ""
+"Chương trình này chưa có danh sách nào được lưu, hãy tạo một danh sách bằng "
+"nút bên dưới."
+
+msgid "Create saved list"
+msgstr "Tạo danh sách đã lưu"
+
+msgid "Create new in another program..."
+msgstr ""
+
+msgid "Create new {{eventLabel}}"
+msgstr "Tạo {{eventLabel}} mới"
+
+msgid "Search for a {{trackedEntityName}} in {{programName}}"
+msgstr "Tìm kiếm {{trackedEntityName}} trong {{programName}}"
+
+msgid "Search..."
+msgstr ""
+
+msgid "Select tracked entity type"
+msgstr ""
+
+msgid "Type to filter tracked entity types"
+msgstr ""
+
+msgid "No tracked entity types available"
+msgstr "Không có loại cá thể khả dụng"
+
+msgid "Assigned to"
+msgstr "Đã gán cho"
+
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+msgid "No one is assigned to this {{eventLabel}}"
+msgstr ""
+
+msgid "Assign"
+msgstr "Gán"
+
+msgid "Check for {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "This program is protected"
+msgstr "Chương trình này đã được bảo vệ"
+
+msgid ""
+"You must provide a reason to check for {{enrollmentsLabel}} in this "
+"protected program."
+msgstr ""
+
+msgid "All activity will be logged."
+msgstr ""
+
+msgid "Reason to check for {{enrollmentsLabel}}"
+msgstr ""
+
+msgid ""
+"Describe the reason you are checking for {{enrollmentsLabel}} in this "
+"protected program"
+msgstr ""
+
+msgid "Unsaved changes"
+msgstr "Các thay đổi chưa được lưu"
+
+msgid "Continue data entry"
+msgstr "Tiếp tục nhập liệu"
+
+msgid "{{enrollmentLabel}} actions"
+msgstr ""
+
+msgid "We are processing your request."
+msgstr "Chúng tôi đang xử lý yêu cầu của bạn."
+
+msgid ""
+"Only one {{enrollmentLabel}} per {{tetName}} is allowed in this program"
+msgstr ""
+
+msgid "Add new"
+msgstr "Thêm mới"
+
+msgid "Reactivate"
+msgstr "Kích hoạt lại"
+
+msgid "Mark as cancelled"
+msgstr "Đánh dấu là đã hủy"
+
+msgid "You do not have access to delete this {{enrollmentLabel}}"
+msgstr "Bạn không có quyền xóa {{enrollmentLabel}}này"
+
+msgid "Delete {{enrollmentLabel}}"
+msgstr "Xóa {{enrollmentLabel}}"
+
+msgid "Are you sure you want to delete this {{enrollmentLabel}}?"
+msgstr ""
+
+msgid "This will permanently remove the current {{enrollmentLabel}}."
+msgstr ""
+
+msgid "Yes, delete {{enrollmentLabel}}."
+msgstr ""
+
+msgid "Remove mark for {{followUpLabel}}"
+msgstr ""
+
+msgid "Mark for {{followUpLabel}}"
+msgstr ""
+
+msgid "Transfer"
+msgstr "Chuyển"
+
+msgid "An error occurred while transferring ownership"
+msgstr "Lỗi khi chuyển sở hữu"
+
+msgid "Existing dates for auto-generated {{eventsLabel}} will not be updated."
+msgstr ""
+
+msgid "Latitude"
+msgstr "Vĩ độ"
+
+msgid "Longitude"
+msgstr "Kinh độ"
+
+msgid "Set coordinates"
+msgstr "Đặt tọa độ"
+
+msgid "Coordinates"
+msgstr "Toạ độ"
+
+msgid "Please provide valid coordinates"
+msgstr "Vui lòng cung cấp tọa độ hợp lệ"
+
+msgid "Delete polygon"
+msgstr "Xóa đa giác"
+
+msgid "Close without saving"
+msgstr "Đóng không cần lưu"
+
+msgid "Finish drawing before saving"
+msgstr "Hoàn thành bản vẽ trước khi lưu"
+
+msgid "Set area"
+msgstr "Đặt khu vực"
+
+msgid ""
+"Transferring {{enrollmentLabel}} ownership from {{ownerOrgUnit}} to "
+"{{newOrgUnit}}{{escape}}"
+msgstr ""
+
+msgid "Transfer Ownership"
+msgstr "Chuyển Sở Hữu"
+
+msgid ""
+"Choose the {{orgUnitLabel}} to which {{enrollmentLabel}} ownership should be"
+" transferred."
+msgstr ""
+
+msgid "{{enrollmentLabel}} date"
+msgstr ""
+
+msgid "Incident date"
+msgstr "Ngày xảy ra"
+
+msgid "{{enrollmentLabel}} widget could not be loaded. Please try again later"
+msgstr ""
+
+msgid "Started at{{escape}}"
+msgstr "Bắt đầu tại {{escape}}"
+
+msgid "Owned by{{escape}}"
+msgstr "Sở hữu bởi {{escape}}"
+
+msgid "Cancelled"
+msgstr "Đã hủy"
+
+msgid "Add coordinates"
+msgstr "Thêm tọa độ"
+
+msgid "Add area"
+msgstr "Thêm khu vực"
+
+msgid "{{orgUnitLabel}} could not be retrieved. Please try again later."
+msgstr ""
+
+msgid "Saving to {{stageName}} for {{programName}} in {{orgUnitName}}"
+msgstr "Lưu vào {{stageName}}cho {{programName}}trong {{orgUnitName}}"
+
+msgid "Saving to {{stageName}} for {{programName}}"
+msgstr "Đang lưu vào giai đoạn {{stageName}} của {{programName}}"
+
+msgid "Program or {{programStageLabel}} is invalid"
+msgstr ""
+
+msgid "{{notesLabel}} about this {{enrollmentLabel}}"
+msgstr ""
+
+msgid "Write a {{noteLabel}} about this {{enrollmentLabel}}"
+msgstr ""
+
+msgid "This {{enrollmentLabel}} doesn't have any {{notesLabel}}"
+msgstr ""
+
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Warning"
+msgstr "Cảnh báo"
+
+msgid "{{programStageLabel}} not found in rules execution"
+msgstr ""
+
+msgid "Are you sure you want to delete this {{eventLabel}}? "
+msgstr ""
+
+msgid "Go to “Schedule” tab to reschedule this {{eventLabel}}"
+msgstr ""
+
+msgid "Scheduled date cannot be changed for {{ eventStatus }} {{eventsLabel}}"
+msgstr ""
+
+msgid "Geometry (Area)"
+msgstr "Hình dáng địa lý (Khu vực)"
+
+msgid "Geometry (Coordinate)"
+msgstr "Hình dáng địa lý (Tọa độ)"
+
+msgid "Polygon captured"
+msgstr "Đã thêm bản đồ ranh giới"
+
+msgid "No polygon captured"
+msgstr "Không có bản đồ ranh giới nào được thêm"
+
+msgid "{{eventLabel}} completed"
+msgstr "{{eventLabel}} đã hoàn thành"
+
+msgid "{{notesLabel}} about this {{eventLabel}}"
+msgstr ""
+
+msgid "Write a {{noteLabel}} about this {{eventLabel}}"
+msgstr ""
+
+msgid "after"
+msgstr "sau"
+
+msgid "before"
+msgstr "trước"
+
+msgid "Scheduled automatically for {{suggestedScheduleDate}}"
+msgstr "Đã lên lịch tự động cho {{suggestedScheduleDate}}"
+
+msgid ""
+"The scheduled date matches the suggested date, but can be changed if needed."
+msgstr ""
+"Ngày đã lên lịch trùng với ngày được đề xuất nhưng có thể thay đổi nếu cần."
+
+msgid "The scheduled date is {{count}} days {{position}} the suggested date."
+msgid_plural ""
+"The scheduled date is {{count}} days {{position}} the suggested date."
+msgstr[0] ""
+"Ngày lên lịch cách {{count}}ngày {{position}}so với ngày được đề xuất."
+
+msgid "Schedule date / Due date"
+msgstr "Ngày lên lịch / Ngày đến hạn"
+
+msgid ""
+"Scheduling an {{eventLabel}} in {{stageName}} for {{programName}} in "
+"{{orgUnitName}}"
+msgstr ""
+
+msgid "Scheduling an {{eventLabel}} in {{stageName}} for {{programName}}"
+msgstr ""
+
+msgid "Schedule info"
+msgstr "Thông tin lên lịch"
+
+msgid "{{eventLabel}} {{notesLabel}}"
+msgstr ""
+
+msgid "Write a {{noteLabel}} about this scheduled {{eventLabel}}"
+msgstr ""
+
+msgid "Feedback"
+msgstr "Phản hồi"
+
+msgid "Indicators"
+msgstr "Các chỉ số"
+
+msgid "Save {{noteLabel}}"
+msgstr "Lưu {{noteLabel}}"
+
+msgid "Edit {{trackedEntityName}}"
+msgstr "Chỉnh sửa {{trackedEntityName}}"
+
+msgid "Save changes"
+msgstr "Lưu các thay đổi"
+
+msgid "Change information about this {{trackedEntityName}} here."
+msgstr ""
+
+msgid ""
+"Information about this {{enrollmentLabel}} can be edited in the "
+"{{enrollmentLabel}} widget."
+msgstr ""
+
+msgid "{{trackedEntityName}} profile"
+msgstr "Hồ sơ {{trackedEntityName}}"
+
+msgid "Profile"
+msgstr "Hồ sơ"
+
+msgid "There is a problem with this form"
+msgstr "Có một vấn đề với biểu nhập này"
+
+msgid "There are warnings in this form"
+msgstr "Có những cảnh báo trong biểu nhập này"
+
+msgid "There was a problem saving changes"
+msgstr "Có vấn đề khi lưu thay đổi"
+
+msgid "Try again or contact your system administrator for support"
+msgstr "Thử lại hoặc liên hệ người quản trị nhờ hỗ trợ"
+
+msgid "Fix errors in the form to continue."
+msgstr "Sửa các lỗi trên biểu nhập để tiếp tục"
+
+msgid "Activate {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "Deactivate {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid ""
+"Are you sure you want to activate this {{trackedEntityTypeName}}? This will "
+"change its status to active and write operations will be allowed."
+msgstr ""
+
+msgid ""
+"Are you sure you want to deactivate this {{trackedEntityTypeName}}? This "
+"will change its status to inactive and only read operations will be allowed."
+msgstr ""
+
+msgid "Yes, activate {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "Yes, deactivate {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "There was a problem activating the {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "There was a problem deactivating the {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "You do not have access to delete this {{trackedEntityTypeName}}"
+msgstr "Bạn không có quyền xóa {{trackedEntityTypeName}}này"
+
+msgid "Delete {{trackedEntityTypeName}}"
+msgstr "Xóa {{trackedEntityTypeName}}"
+
+msgid ""
+"Are you sure you want to delete this {{trackedEntityTypeName}}? This will "
+"permanently remove the {{trackedEntityTypeName}} and all its associated "
+"{{enrollmentsLabel}} and {{eventsLabel}} in all programs."
+msgstr ""
+
+msgid "There was a problem deleting the {{trackedEntityTypeName}}"
+msgstr "Có vấn đề khi xóa {{trackedEntityTypeName}}"
+
+msgid "Yes, delete {{trackedEntityTypeName}}"
+msgstr "Có, xóa {{trackedEntityTypeName}}"
+
+msgid "View profile"
+msgstr "Xem hồ sơ"
+
+msgid "Profile widget could not be loaded. Please try again later"
+msgstr "Không thể tải hồ sơ. Vui lòng thử lại sau"
+
+msgid "No {{attributesLabel}} configured for {{trackedEntityTypeName}}"
+msgstr ""
+
+msgid "No {{attributesLabel}} configured"
+msgstr ""
+
+msgid "No {{attributesLabel}} configured to display"
+msgstr ""
+
+msgid "{{trackedEntityTypeName}} profile"
+msgstr "Hồ sơ {{trackedEntityTypeName}}"
+
+msgid "Choose a {{linkableStageLabel}} {{eventLabel}}"
+msgstr ""
+
+msgid "Select an {{eventLabel}}"
+msgstr ""
+
+msgid "{{ linkableStageLabel }} can only have one {{eventLabel}}"
+msgstr ""
+
+msgid "Enter details now"
+msgstr "Nhập chi tiết bây giờ"
+
+msgid "{{ linkableStageLabel }} has no linkable {{eventsLabel}}"
+msgstr ""
+
+msgid "Link to an existing {{eventLabel}}"
+msgstr "Liên kết với một {{eventLabel}}đã tồn tại"
+
+msgid "Actions - {{relationshipName}}"
+msgstr "Hành động - {{relationshipName}}"
+
+msgid "Ambiguous {{relationshipsLabel}}, contact system administrator"
+msgstr ""
+
+msgid "Enter details"
+msgstr "Nhập chi tiết"
+
+msgid "Linked {{eventLabel}}"
+msgstr ""
+
+msgid "The {{eventLabel}} was successfully linked"
+msgstr ""
+
+msgid "An error occurred while linking the {{eventLabel}}"
+msgstr ""
+
+msgid "Scheduled date"
+msgstr "Ngày đã hẹn"
+
+msgid "Report date"
+msgstr "Ngày báo cáo"
+
+msgid "Please enter a date"
+msgstr "Hãy chọn một ngày"
+
+msgid "Please select a valid {{eventLabel}}"
+msgstr ""
+
+msgid "This {{programStageLabel}} can only have one {{eventLabel}}"
+msgstr ""
+
+msgid "New {{ eventName }} {{eventLabel}}"
+msgstr ""
+
+msgid "Show {{ rest }} more"
+msgstr "Hiện nhiều hơn {{ rest }}"
+
+msgid "Go to full {{ eventName }}"
+msgstr "Đến {{ eventName }}đầy đủ"
+
+msgid "{{eventsLabel}} could not be retrieved. Please try again later."
+msgstr ""
+
+msgid "{{ overdueEvents }} overdue"
+msgstr "{{ overdueEvents }}quá hạn"
+
+msgid "{{ scheduledEvents }} scheduled"
+msgstr "{{ scheduledEvents }}đã lên lịch"
+
+msgid "No {{programStagesLabel}} found in this program"
+msgstr ""
+
+msgid "{{programStagesLabel}} and {{eventsLabel}}"
+msgstr ""
+
+msgid "An error occurred while unlinking and deleting the {{eventLabel}}."
+msgstr ""
+
+msgid "Unlink and delete linked {{eventLabel}}"
+msgstr ""
+
+msgid ""
+"Are you sure you want to remove the link and delete the linked "
+"{{eventLabel}}?"
+msgstr ""
+
+msgid ""
+"This action permanently removes the link, linked {{eventLabel}}, and all "
+"related data."
+msgstr ""
+
+msgid "Yes, unlink and delete linked {{eventLabel}}"
+msgstr ""
+
+msgid "Unlink {{eventLabel}}"
+msgstr ""
+
+msgid ""
+"Are you sure you want to remove the link between these {{eventsLabel}}?"
+msgstr ""
+
+msgid ""
+"This action removes the link itself, but the linked {{eventLabel}} will "
+"remain."
+msgstr ""
+
+msgid "Yes, unlink {{eventLabel}}"
+msgstr ""
+
+msgid "View linked {{eventLabel}}"
+msgstr ""
+
+msgid ""
+"You do not have access to remove the link between these {{eventsLabel}}"
+msgstr ""
+
+msgid ""
+"You do not have access to remove the link and delete the linked "
+"{{eventLabel}}"
+msgstr ""
+
+msgid "An error occurred while loading the widget."
+msgstr "Có lỗi xảy ra khi tải thông tin"
+
+msgid "Scheduled"
+msgstr "Đã lên lịch"
+
+msgid "Changelog"
+msgstr "Nhật ký thay đổi"
+
+msgid "No changes to display"
+msgstr "Không có thay đổi nào để hiển thị"
+
+msgid "Data item"
+msgstr "Mục dữ liệu"
+
+msgid "Updated"
+msgstr "Đã cập nhật"
+
+msgid "Created"
+msgstr "Đã tạo"
+
+msgid "Deleted"
+msgstr "Đã xóa"
+
+msgid "Sort by date"
+msgstr "Sắp xếp theo ngày"
+
+msgid "User"
+msgstr "Người dùng"
+
+msgid "Sort by username"
+msgstr "Sắp xếp theo tài khoản người dùng"
+
+msgid "Sort by data item"
+msgstr "Sắp xếp theo mục dữ liệu"
+
+msgid "Change"
+msgstr "Thay đổi"
+
+msgid "Value"
+msgstr "Giá trị"
+
+msgid "File"
+msgstr "Tập tin"
+
+msgid "Image"
+msgstr "Hình ảnh"
+
+msgid "New {{trackedEntityTypeName}} {{relationshipLabel}}"
+msgstr ""
+
+msgid "Missing implementation step"
+msgstr "Thiếu bước triển khai"
+
+msgid "Go back without saving {{relationshipLabel}}"
+msgstr ""
+
+msgid "New {{relationshipLabel}}"
+msgstr "{{relationshipLabel}} mới"
+
+msgid "Link to an existing {{tetName}}"
+msgstr "Liên kết với một {{tetName}}đã tồn tại"
+
+msgid "An error occurred while adding the {{relationshipLabel}}"
+msgstr ""
+
+msgid ""
+"Something went wrong while loading {{relationshipsLabel}}. Please try again "
+"later."
+msgstr ""
+
+msgid "{{trackedEntityTypeName}} {{relationshipsLabel}}"
+msgstr ""
+
+msgid "Delete {{relationshipLabel}}"
+msgstr "Xóa {{relationshipLabel}}"
+
+msgid "Deleting the {{relationshipLabel}} is permanent and cannot be undone."
+msgstr ""
+
+msgid "Are you sure you want to delete this {{relationshipLabel}}?"
+msgstr ""
+
+msgid "Yes, delete {{relationshipLabel}}"
+msgstr "Có, xóa {{relationshipLabel}}"
+
+msgid "An error occurred while deleting the {{relationshipLabel}}."
+msgstr ""
+
+msgid "This {{enrollmentLabel}} doesn't have any {{relationshipsLabel}}"
+msgstr ""
+
+msgid "Type"
+msgstr "Loại"
+
+msgid "Created date"
+msgstr "Ngày tạo"
+
+msgid "{{programStageLabel}} name"
+msgstr ""
+
+msgid "Working list could not be loaded"
+msgstr "Không thể tải danh sách làm việc"
+
+msgid ""
+"{{occurredAt}} belongs to an expired period. {{eventLabel}} cannot be "
+"deleted"
+msgstr ""
+
+msgid "Download data..."
+msgstr "Tải xuống dữ liệu ..."
+
+msgid "an error occurred loading working lists"
+msgstr "đã xảy ra lỗi khi tải danh sách làm việc"
+
+msgid "You do not have access to complete {{eventsLabel}}"
+msgstr ""
+
+msgid "There is a bulk data entry with unsaved changes"
+msgstr "Có rất nhiều dữ liệu chưa được lưu thay đổi"
+
+msgid "Complete {{eventsLabel}}"
+msgstr ""
+
+msgid ""
+"Are you sure you want to complete all active {{eventsLabel}} in selection?"
+msgstr ""
+
+msgid ""
+"There are no active {{eventsLabel}} to complete in the current selection."
+msgstr ""
+
+msgid "Error completing {{eventsLabel}}"
+msgstr ""
+
+msgid "There was an error completing the {{eventsLabel}}."
+msgstr ""
+
+msgid "An error occurred while completing {{eventsLabel}}"
+msgstr ""
+
+msgid "You do not have access to delete {{eventsLabel}}"
+msgstr ""
+
+msgid "Delete {{eventsLabel}}"
+msgstr "Xóa {{eventsLabel}}"
+
+msgid "This cannot be undone."
+msgstr ""
+
+msgid "Are you sure you want to delete the selected {{eventsLabel}}?"
+msgstr ""
+
+msgid "Error deleting {{eventsLabel}}"
+msgstr ""
+
+msgid ""
+"There was an error while deleting the {{eventsLabel}}. Please see the "
+"details below."
+msgstr ""
+
+msgid "An error occurred while deleting the {{eventsLabel}}"
+msgstr ""
+
+msgid "Owner {{orgUnitLabel}}"
+msgstr ""
+
+msgid "Registration Date"
+msgstr "Ngày đăng ký"
+
+msgid "{{eventLabel}} {{orgUnitLabel}}"
+msgstr ""
+
+msgid "{{enrollmentLabel}} status"
+msgstr ""
+
+msgid "Choose a {{programStageLabel}} to filter by {{label}}"
+msgstr ""
+
+msgid "You do not have access to bulk complete {{enrollmentsLabel}}"
+msgstr ""
+
+msgid ""
+"An unexpected error occurred while fetching the {{enrollmentsLabel}}. Please"
+" try again."
+msgstr ""
+
+msgid "There are currently no active {{enrollmentsLabel}} in the selection."
+msgstr ""
+
+msgid "All {{enrollmentsLabel}} are already completed or cancelled."
+msgstr ""
+
+msgid ""
+"This action will complete {{count}} active {{enrollmentLabel}} in your "
+"selection."
+msgid_plural ""
+"This action will complete {{count}} active {{enrollmentLabel}} in your "
+"selection."
+msgstr[0] ""
+
+msgid ""
+"{{count}} {{enrollmentLabel}} already marked as completed will not be "
+"changed."
+msgid_plural ""
+"{{count}} {{enrollmentLabel}} already marked as completed will not be "
+"changed."
+msgstr[0] ""
+
+msgid "Mark all {{eventsLabel}} within {{enrollmentsLabel}} as complete"
+msgstr ""
+
+msgid "Complete {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "No active {{enrollmentsLabel}} to complete"
+msgstr ""
+
+msgid "Complete {{count}} {{enrollmentLabel}}"
+msgid_plural "Complete {{count}} {{enrollmentLabel}}"
+msgstr[0] ""
+
+msgid "Error completing {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "An error occurred when completing the {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "An unknown error occurred when completing {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "You do not have access to delete {{enrollmentsLabel}}"
+msgstr ""
+
+msgid ""
+"An error occurred while loading the selected {{enrollmentsLabel}}. Please "
+"try again."
+msgstr ""
+
+msgid "Active {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Active {{enrollmentsLabel}} ({{count}})"
+msgstr[0] ""
+
+msgid "Completed {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Completed {{enrollmentsLabel}} ({{count}})"
+msgstr[0] ""
+
+msgid "Cancelled {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Cancelled {{enrollmentsLabel}} ({{count}})"
+msgstr[0] ""
+
+msgid "Error deleting {{enrollmentsLabel}}"
+msgstr ""
+
+msgid ""
+"There was an error while deleting the {{enrollmentsLabel}}. Please see the "
+"details below."
+msgstr ""
+
+msgid "Delete selected {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "Delete {{count}} {{enrollmentLabel}}"
+msgid_plural "Delete {{count}} {{enrollmentLabel}}"
+msgstr[0] ""
+
+msgid "Delete {{enrollmentsLabel}}"
+msgstr "Xóa {{enrollmentsLabel}}"
+
+msgid "An error occurred when deleting {{enrollmentsLabel}}"
+msgstr ""
+
+msgid "Working list could not be updated"
+msgstr "Không thể cập nhật danh sách làm việc"
+
+msgid "an error occurred loading the working lists"
+msgstr "đã xảy ra lỗi khi tải danh sách làm việc"
+
+msgid "Update view"
+msgstr "Cập nhật chế độ xem"
+
+msgid "Save current view..."
+msgstr "Lưu chế độ xem hiện tại ..."
+
+msgid "Save current view as..."
+msgstr "Lưu chế độ xem hiện tại dưới dạng ..."
+
+msgid "Delete view"
+msgstr "Xóa chế độ xem"
+
+msgid "Share view..."
+msgstr "Chia sẻ chế độ xem ..."
+
+msgid "Do you really want to delete the '{{templateName}}' view?"
+msgstr "Bạn có thực sự muốn xóa chế độ xem '{{templateName}}' không?"
+
+msgid "Confirm"
+msgstr "Xác nhận"
+
+msgid "Save As view"
+msgstr "Lưu dưới dạng xem"
+
+msgid "View name"
+msgstr "Xem tên"
+
+msgid "Show Less"
+msgstr "Hiện ít hơn"
+
+msgid "Show All"
+msgstr "Hiển thị tất cả"
+
+msgid "Add to ongoing bulk data entry"
+msgstr "Thêm vào mục nhập dữ liệu hàng loạt đang diễn ra"
+
+msgid "Add page to ongoing bulk data entry"
+msgstr "Thêm trang vào mục nhập dữ liệu hàng loạt đang diễn ra"
+
+msgid "Available bulk entry forms"
+msgstr "Có sẵn các biểu mẫu nhập số lượng lớn"
+
+msgid "Open in bulk data entry"
+msgstr "Mở trong mục nhập dữ liệu hàng loạt"
+
+msgid "Open page in bulk data entry"
+msgstr "Mở trang trong mục nhập dữ liệu hàng loạt"
+
+msgid "{{count}} selected"
+msgid_plural "{{count}} selected"
+msgstr[0] "Đã chọn {{count}}"
+
+msgid "Deselect all"
+msgstr "Bỏ chọn tất cả"
+
+msgid "Details (Advanced)"
+msgstr "Chi tiết (Nâng cao)"
+
+msgid "An unknown error occurred."
+msgstr "Một lỗi không xác định đã xuất hiện."
+
+msgid "Download as JSON"
+msgstr "Tải về dạng JSON"
+
+msgid "Download as CSV"
+msgstr "Tải xuống với CSV"
+
+msgid "Download with current filters"
+msgstr "Tải xuống với các bộ lọc hiện tại"
+
+msgid "Exact matches only"
+msgstr ""
+
+msgid "Must match the start of the value"
+msgstr ""
+
+msgid "Must match the end of the value"
+msgstr ""
+
+msgid "enrollments"
+msgstr ""
+
+msgid "event"
+msgstr "sự kiện"
+
+msgid "events"
+msgstr "sự kiện"
+
+msgid "program stage"
+msgstr ""
+
+msgid "program stages"
+msgstr ""
+
+msgid "note"
+msgstr ""
+
+msgid "notes"
+msgstr ""
+
+msgid "relationship"
+msgstr ""
+
+msgid "relationships"
+msgstr "mối quan hệ"
+
+msgid "attribute"
+msgstr ""
+
+msgid "attributes"
+msgstr ""
+
+msgid "organisation unit"
+msgstr ""
+
+msgid "follow-up"
+msgstr ""
+
+msgid "Scheduled{{ escape }} due {{ time }}"
+msgstr "Đã lên lịch {{ escape }}{{ time }}hẹn"
+
+msgid "Overdue{{ escape }} due {{ time }}"
+msgstr "Đã quá hạn {{ escape }}{{ time }}"
+
+msgid "Overdue"
+msgstr "Quá hạn"
+
+msgid "Skipped"
+msgstr "Đã bỏ qua"
+
+msgid "{{trackedEntityName}} in program{{escape}} {{programName}}"
+msgstr "{{trackedEntityName}} trong chương trình {{escape}}{{programName}}"
+
+msgid "Program not found"
+msgstr "Không tìm thấy chương trình"
+
+msgid "Program is not a tracker program"
+msgstr "Chương trình không phải là một chương trình theo dõi"
+
+msgid "Could not save {{eventLabel}}"
+msgstr ""
+
+msgid "Could not delete {{eventLabel}}"
+msgstr ""
+
+msgid "Could not save working list"
+msgstr "Không thể lưu danh sách làm việc"
+
+msgid "Could not add working list"
+msgstr "Không thể thêm danh sách làm việc"
+
+msgid "Could not delete working list"
+msgstr "Không thể xóa danh sách làm việc"
+
+msgid "Search failed. Please try again."
+msgstr ""
+
+msgid "Error saving tracked entity instance"
+msgstr "Lỗi khi lưu cá thể"
+
+msgid "Error saving {{enrollmentLabel}}"
+msgstr ""
+
+msgid "Error saving the {{enrollmentLabel}} {{eventLabel}}"
+msgstr ""
+
+msgid "Error deleting the {{enrollmentLabel}} {{eventLabel}}"
+msgstr ""
+
+msgid "Error editing the {{eventLabel}}, the changes made were not saved"
+msgstr ""
+
+msgid "Error updating the Assignee"
+msgstr "Lỗi khi cập nhật Người được giao"
+
+msgid "Could not save {{enrollmentLabel}} {{noteLabel}}"
+msgstr ""
+
+msgid "Could not save {{eventLabel}} {{noteLabel}}"
+msgstr ""
+
+msgid "There was an error fetching metadata"
+msgstr ""
+
+msgid "Please provide a valid date and time"
+msgstr "Vui lòng cung cấp ngày và giờ hợp lệ"
+
+msgid "Please provide a valid time"
+msgstr "Vui lòng cung cấp thời gian hợp lệ"
+
+msgid "Please provide a valid url"
+msgstr "Vui lòng cung cấp một url hợp lệ"
+
+msgid "Please provide a valid email address"
+msgstr "Vui lòng cung cấp một địa chỉ email hợp lệ"
+
+msgid "Please provide a valid age"
+msgstr "Vui lòng cung cấp độ tuổi hợp lệ"
+
+msgid "Please provide a valid phone number"
+msgstr "Vui lòng cung cấp một số điện thoại hợp lệ"
+
+msgid "Please provide a valid selection."
+msgstr ""
+
+msgid "This value already exists"
+msgstr "Giá trị này đã tồn tại"
+
+msgid "\"From\" cannot be greater than \"To\""
+msgstr "\"Từ\" không được lớn hơn \"Tới\""
+
+msgid ""
+"Please enter at least {{minCharactersToSearch}} characters for {{formName}} "
+"to perform a search"
+msgstr ""
+
+msgid "Checking..."
+msgstr "Đang kiểm tra ..."
+
+msgid "Please provide a valid positive integer"
+msgstr "Vui lòng cung cấp một số nguyên dương hợp lệ"
+
+msgid "Please enter a valid time"
+msgstr "Vui lòng nhập thời gian hợp lệ"
+
+msgid "Please enter a time"
+msgstr "Vui lòng nhập thời gian"
+
+msgid ""
+"The following {{attributeLabel}} type is not supported for searching and has"
+" been hidden"
+msgid_plural ""
+"The following {{attributeLabel}} type is not supported for searching and has"
+" been hidden"
+msgstr[0] ""
+
+msgid "Some {{attributesLabel}} are hidden"
+msgstr ""
+
+msgid "Set coordinate"
+msgstr "Đặt tọa độ"
+
+msgid "Page {{currentPage}}"
+msgstr "Trang {{currentPage}}"
+
+msgid "Area on map saved"
+msgstr "Khu vực trên bản đồ đã được lưu"
+
+msgid "Compatibility mode"
+msgstr "Chế độ tương thích"
+
+msgid ""
+"This app is currently running in compatibility mode due to browser "
+"restrictions. For better performance, use another browser or exit private "
+"mode if this is currently in use."
+msgstr ""
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Capture NP"
+
+msgctxt "Title for shortcut used by command palette"
+msgid "__MANIFEST_SHORTCUT_Search TEI"
+msgstr ""

@@ -1,0 +1,69 @@
+import React from 'react';
+import { IconInfo16, Tag } from '@dhis2/ui';
+import i18n from '@dhis2/d2-i18n';
+import { withStyles, type WithStyles } from 'capture-core-utils/styles';
+import { ConditionalTooltip } from '../Tooltips/ConditionalTooltip';
+import { getReadOnlyMessage } from './getReadOnlyMessage';
+import type { Props } from './ReadOnlyBadge.types';
+import { LabelKeys, useTermLabel } from '../../customLabels';
+
+const styles = {
+    label: {
+        fontWeight: 500,
+    },
+} as const;
+
+const ReadOnlyBadgePlain = ({
+    programWriteAccess = true,
+    trackedEntityTypeWriteAccess = true,
+    programStageWriteAccess = true,
+    attributeOptionComboWriteAccess = true,
+    isEventBlockedByExpiry = false,
+    isEventBlockedByCompletion = false,
+    multipleStages = false,
+    trackedEntityName,
+    trackedEntityInactive = false,
+    inlineLabel = false,
+    stageId,
+    classes,
+}: Props & WithStyles<typeof styles>) => {
+    const { enrollmentLabel, programStageLabel, programStagesLabel, eventLabel } = useTermLabel(
+        [
+            LabelKeys.enrollmentSingular,
+            LabelKeys.programStageSingular,
+            LabelKeys.programStagePlural,
+            LabelKeys.eventSingular,
+        ],
+        { stageId },
+    );
+    const message = getReadOnlyMessage({
+        programWriteAccess,
+        trackedEntityTypeWriteAccess,
+        programStageWriteAccess,
+        attributeOptionComboWriteAccess,
+        trackedEntityName,
+        multipleStages,
+        isEventBlockedByExpiry,
+        isEventBlockedByCompletion,
+        trackedEntityInactive,
+        enrollmentLabel,
+        programStageLabel,
+        programStagesLabel,
+        eventLabel,
+    });
+    if (!message) return null;
+
+    const labelText = inlineLabel
+        ? i18n.t('View only - {{message}}', { message, escapeValue: false })
+        : i18n.t('View only');
+
+    return (
+        <ConditionalTooltip content={message} enabled>
+            <Tag maxWidth="400px" neutral icon={<IconInfo16 />}>
+                <span className={classes.label}>{labelText}</span>
+            </Tag>
+        </ConditionalTooltip>
+    );
+};
+
+export const ReadOnlyBadge = withStyles(styles)(ReadOnlyBadgePlain);

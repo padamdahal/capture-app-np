@@ -1,0 +1,2323 @@
+# Translators:
+# Philip Larsen Donnelly, 2024
+# Viktor Varland <viktor@dhis2.org>, 2026
+# 晓东 林 <13981924470@126.com>, 2026
+# Transifex Bot <>, 2026
+# easylin <lin_xd@126.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"POT-Creation-Date: 2026-10-05T10:05:05.847Z\n"
+"PO-Revision-Date: 2019-06-27 07:31+0000\n"
+"Last-Translator: easylin <lin_xd@126.com>, 2026\n"
+"Language-Team: Chinese (https://app.transifex.com/hisp-uio/teams/100509/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "The application could not be loaded."
+msgstr "应用程序无法加载。"
+
+msgid "Please verify that the server is running."
+msgstr "请确认服务器正在运行。"
+
+msgid "Please see log for details."
+msgstr "详情请查看日志。"
+
+msgid "Choose one or more dates..."
+msgstr "选择一个或多个日期"
+
+msgid "Choose a date..."
+msgstr "选择日期"
+
+msgid "Today"
+msgstr "今天"
+
+msgid ""
+"A possible reason for this is that the browser or mode (e.g. privacy mode) "
+"is not supported. See log for details."
+msgstr "造成这种情况的可能原因是不支持浏览器或模式（例如隐私模式）。有关详细信息，请参见日志。"
+
+msgid "Please refresh the page (Either the server or the app version changed)"
+msgstr "请刷新页面（服务器或应用程序版本已更改）"
+
+msgid "Bulk data entry"
+msgstr "批量数据录入"
+
+msgid "Program overview"
+msgstr "项目计划概述"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Active {{enrollmentsLabel}}"
+msgstr "有效{{enrollmentsLabel}}"
+
+msgid "Completed {{enrollmentsLabel}}"
+msgstr "已完成{{enrollmentsLabel}}"
+
+msgid "Cancelled {{enrollmentsLabel}}"
+msgstr "已取消{{enrollmentsLabel}}"
+
+msgid "{{enrollmentLabel}} dashboard"
+msgstr "{{enrollmentLabel}} 仪表盘"
+
+msgid "View {{eventLabel}}"
+msgstr "查看{{eventLabel}}"
+
+msgid "Edit {{eventLabel}}"
+msgstr "编辑{{eventLabel}}"
+
+msgid "New {{eventLabel}}"
+msgstr "新{{eventLabel}}"
+
+msgid "Loading..."
+msgstr "载入....."
+
+msgid "{{eventLabel}} list"
+msgstr "{{eventLabel}} 列表"
+
+msgid "More"
+msgstr "更多"
+
+msgid "View {{programName}} dashboard"
+msgstr "查看 {{programName}} 仪表板"
+
+msgid "View dashboard"
+msgstr "查看仪表盘"
+
+msgid "View active {{enrollmentLabel}}"
+msgstr "查看活跃状态{{enrollmentLabel}}"
+
+msgid "Re-enroll in {{programName}}"
+msgstr "重新注册{{programName}}"
+
+msgid "Enrolled"
+msgstr "已登记"
+
+msgid "Previously enrolled"
+msgstr "以前登记的"
+
+msgid "Date of {{enrollmentLabel}}"
+msgstr "日期：{{enrollmentLabel}}"
+
+msgid "Last updated"
+msgstr "上次更新"
+
+msgid "Lat"
+msgstr "纬度"
+
+msgid "Long"
+msgstr "经度"
+
+msgid "lat{{escape}} {{latitudeValue}}"
+msgstr "lat{{escape}} {{latitudeValue}}"
+
+msgid "long{{escape}} {{longitudeValue}}"
+msgstr "长{{escape}} {{longitudeValue}}"
+
+msgid "Show less"
+msgstr "显示较少"
+
+msgid "Show more"
+msgstr "更多"
+
+msgid "error encountered during field validation"
+msgstr "字段验证发生错误。"
+
+msgid "error"
+msgstr "错误"
+
+msgid "This value is validating"
+msgstr "值正在被验证"
+
+msgid "Async field update failed"
+msgstr "异步字段更新失败"
+
+msgid "Area"
+msgstr "面积"
+
+msgid "Coordinate"
+msgstr "坐标"
+
+msgid "{{eventLabel}} - {{categoryDisplayName}}"
+msgstr "{{eventLabel}} -{{categoryDisplayName}}"
+
+msgid "{{enrollmentLabel}} - {{categoryDisplayName}}"
+msgstr "{{enrollmentLabel}} -{{categoryDisplayName}}"
+
+msgid "Complete {{eventLabel}}"
+msgstr "完成{{eventLabel}}"
+
+msgid ""
+"The date entered belongs to an expired period. Enter a date after "
+"{{firstValidDate}}."
+msgstr "输入的日期属于过期日期。输入{{firstValidDate}} 之后的日期。"
+
+msgid "A value is required"
+msgstr "需要一个值"
+
+msgid "Please provide a valid date"
+msgstr "请提供有效的日期"
+
+msgid "{{ stageName }} - Basic info"
+msgstr "{{ stageName }} - 基本信息"
+
+msgid "{{ stageName }} - Assignee"
+msgstr "{{ stageName }} - 受让人"
+
+msgid "{{ stageName }} - Status"
+msgstr "{{ stageName }} - 状态"
+
+msgid "A date in the future is not allowed"
+msgstr "不允许将来的日期"
+
+msgid ""
+"Saving a new {{enrollmentLabel}} in {{programName}} in {{orgUnitName}}."
+msgstr ""
+"将一个新的{{enrollmentLabel}} 文件保存到{{programName}} 目录下（路径：{{orgUnitName}} ）。"
+
+msgid "Saving a {{trackedEntityName}} in {{programName}} in {{orgUnitName}}."
+msgstr "在 {{orgUnitName}} 的 {{programName}} 中保存 {{trackedEntityName}}。"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Metadata error. see log for details"
+msgstr "元数据错误"
+
+msgid ""
+"The selected {{enrollmentLabel}} category options are not a valid "
+"combination."
+msgstr "所选的“{{enrollmentLabel}} ”类别选项组合无效。"
+
+msgid "{{ stageName }} - Details"
+msgstr "{{ stageName }} - 详细信息"
+
+msgid "{{ stageName }} - {{ sectionName }}"
+msgstr "{{ stageName }} - {{ sectionName }}"
+
+msgid "Assigned user"
+msgstr "分配的用户"
+
+msgid "Search for user"
+msgstr "搜索用户 "
+
+msgid "Saving to {{programName}} in {{orgUnitName}}"
+msgstr "保存到 {{orgUnitName}} 中的 {{programName}}"
+
+msgid "Saving to {{programName}}"
+msgstr "保存到{{programName}}项目"
+
+msgid "Basic info"
+msgstr "基本信息"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Assignee"
+msgstr "分配者"
+
+msgid ""
+"This is not an event program or the metadata is corrupt. See log for "
+"details."
+msgstr "这不是事件项目或者元数据坏了，查看日志详情"
+
+msgid "This {{eventLabel}}"
+msgstr "这{{eventLabel}}"
+
+msgid ""
+"{{relationshipLabel}} of type {{relationshipTypeName}} to {{entityName}} "
+"already exists"
+msgstr "{{relationshipLabel}} 类型为{{relationshipTypeName}} 的{{entityName}} 已存在"
+
+msgid "Active"
+msgstr "活动的"
+
+msgid "Completed"
+msgstr "已完成"
+
+msgid ""
+"Please add or cancel the {{noteLabel}} before saving the {{eventLabel}}"
+msgstr "请在保存前添加或取消{{noteLabel}} 。{{eventLabel}}"
+
+msgid "Please provide a valid {{orgUnitLabel}}"
+msgstr "请提供一个有效的{{orgUnitLabel}}"
+
+msgid "Save and add another"
+msgstr "保存并另外添加"
+
+msgid "Save and exit"
+msgstr "保存后退出"
+
+msgid "Finish"
+msgstr "结束"
+
+msgid "Save without completing"
+msgstr "保存而不完成"
+
+msgid "Complete"
+msgstr "完成"
+
+msgid "No write access"
+msgstr "无写权限"
+
+msgid "New {{titleText}}"
+msgstr "新的{{titleText}}"
+
+msgid "Switch to form view"
+msgstr "切换到表单视图"
+
+msgid "Switch to row view"
+msgstr "切换到行视图"
+
+msgid "{{count}} {{eventLabel}} added"
+msgid_plural "{{count}} {{eventLabel}} added"
+msgstr[0] "{{count}} {{eventsLabel}} 已添加"
+
+msgid "No {{eventsLabel}} added"
+msgstr "未添加{{eventsLabel}} "
+
+msgid "Adding {{relationshipLabel}} to {{eventLabel}}."
+msgstr "将{{relationshipLabel}} 添加到{{eventLabel}} 中。"
+
+msgid "Go back to {{eventLabel}} without saving {{relationshipLabel}}"
+msgstr "返回{{eventLabel}} ，不保存{{relationshipLabel}}"
+
+msgid "New {{eventLabel}} {{relationshipLabel}}"
+msgstr "新款{{eventLabel}} {{relationshipLabel}}"
+
+msgid "Discard unsaved changes?"
+msgstr "放弃没有保存的修改?"
+
+msgid ""
+"Leaving this page will discard the selections you made for a new "
+"{{relationshipLabel}}"
+msgstr "离开此页面将清除您为新项目所做的选择{{relationshipLabel}}"
+
+msgid "Yes, discard changes"
+msgstr "是的，放弃更改"
+
+msgid "No, cancel"
+msgstr "不，取消"
+
+msgid ""
+"You don't have access to create an {{eventLabel}} in the current selections"
+msgstr "您无权在当前选定项中创建{{eventLabel}} "
+
+msgid "Saving a {{trackedEntityName}}"
+msgstr "保存{{trackedEntityName}}"
+
+msgid "without"
+msgstr "没有"
+
+msgid "enrollment"
+msgstr "登记"
+
+msgid "in"
+msgstr " 在"
+
+msgid "Enroll in a program by selecting a program from the top bar."
+msgstr "通过从顶部栏中选择一个项目来登记"
+
+msgid "An error has occurred. See log for details"
+msgstr "发生了错误。查看日志以获取详细信息"
+
+msgid "{{programStageName}} completed"
+msgstr "{{programStageName}} 已完成"
+
+msgid ""
+"Would you like to complete the {{enrollmentLabel}} and all active "
+"{{eventsLabel}} as well?"
+msgstr "您是否还想完成“{{enrollmentLabel}} ”以及所有正在进行的“{{eventsLabel}} ”？"
+
+msgid "{{count}} {{eventLabel}} in {{programStageName}}"
+msgid_plural "{{count}} {{eventLabel}} in {{programStageName}}"
+msgstr[0] "{{count}} {{eventsLabel}} 在{{programStageName}}"
+
+msgid "Yes, complete {{enrollmentLabel}} and {{eventsLabel}}"
+msgstr "是的，请访问{{enrollmentLabel}} 并{{eventsLabel}}"
+
+msgid "Complete {{enrollmentLabel}} only"
+msgstr "仅限{{enrollmentLabel}} 完整版"
+
+msgid "Would you like to complete the {{enrollmentLabel}}?"
+msgstr "您想参加“{{enrollmentLabel}} ”活动吗？"
+
+msgid "Complete {{enrollmentLabel}}"
+msgstr "完成{{enrollmentLabel}}"
+
+msgid "A duplicate exists (but there were some errors, see log for details"
+msgstr "存在重复，但是有错误，查看日志详情。"
+
+msgid ""
+"An item with this {{attributeName}} is already registered, but you don't "
+"have access to it"
+msgstr " 具有 {{attributeName}}  属性的条目已经注册，但是你不能访问 "
+
+msgid "You have already registered this {{attributeName}}"
+msgstr "你已经注册了该{{attributeName}}"
+
+msgid ""
+"A {{trackedEntityTypeName}} with this {{attributeName}} is already "
+"registered"
+msgstr "一个具有 {{attributeName}} 的 {{trackedEntityTypeName}} 实体已经注册"
+
+msgid "Show registered {{trackedEntityTypeName}}"
+msgstr "显示已注册的{{trackedEntityTypeName}}"
+
+msgid "Registered person"
+msgstr "已注册的人"
+
+msgid "No item selected"
+msgstr "未选择项目"
+
+msgid "Form foundation missing. See log for details"
+msgstr "表单 地基丢失。详见日志"
+
+msgid "validation failed"
+msgstr "验证失败"
+
+msgid "No feedback for this {{eventLabel}} yet"
+msgstr "目前尚无关于此{{eventLabel}} 的反馈"
+
+msgid "No indicator output for this {{eventLabel}} yet"
+msgstr "目前该{{eventLabel}} 尚未输出任何指示信号"
+
+msgid "Generate new {{eventLabel}}"
+msgstr "生成新内容{{eventLabel}}"
+
+msgid "Do you want to create another {{eventLabel}}?"
+msgstr "你想再创建一个{{eventLabel}} 吗？"
+
+msgid "Yes, create new {{eventLabel}}"
+msgstr "是的，创建新条目{{eventLabel}}"
+
+msgid "Back to form"
+msgstr "回到表单"
+
+msgid "Save anyway"
+msgstr "仍然保存"
+
+msgid "Validation errors and warnings"
+msgstr "验证错误和警告"
+
+msgid "Validation errors"
+msgstr "验证错误"
+
+msgid "Validation warnings"
+msgstr "有效性警告"
+
+msgid "Some operations are still running. Please wait."
+msgstr "某些操作仍在进行中。请稍候。"
+
+msgid "Operations running"
+msgstr "运作中"
+
+msgid "Please select {{categoryName}}"
+msgstr "请选择{{categoryName}}"
+
+msgid "No feedback for this {{enrollmentLabel}} yet"
+msgstr "目前尚无关于此{{enrollmentLabel}} 的反馈"
+
+msgid "No indicator output for this {{enrollmentLabel}} yet"
+msgstr "目前该{{enrollmentLabel}} 尚无指示器输出"
+
+msgid "View changelog"
+msgstr "查看变更日志"
+
+msgid "An error occurred when updating {{eventLabel}} status"
+msgstr "更新{{eventLabel}} 状态时发生错误"
+
+msgid "Mark incomplete"
+msgstr "标记不完整"
+
+msgid "Mark complete"
+msgstr "标记为已完成"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "An error occurred while deleting the {{eventLabel}}"
+msgstr "删除时发生错误：{{eventLabel}}"
+
+msgid "Delete {{eventLabel}}"
+msgstr "删除{{eventLabel}}"
+
+msgid "Deleting an {{eventLabel}} is permanent and cannot be undone."
+msgstr "删除{{eventLabel}} 操作不可逆，且无法撤销。"
+
+msgid "Are you sure you want to delete this {{eventLabel}}?"
+msgstr "您确定要删除此{{eventLabel}} 吗？"
+
+msgid "Yes, delete {{eventLabel}}"
+msgstr "是的，删除{{eventLabel}}"
+
+msgid "Unskip"
+msgstr "不跳过"
+
+msgid "Skip"
+msgstr "跳过"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Please select the user"
+msgstr "请选择用户"
+
+msgid "Me"
+msgstr "我"
+
+msgid "Anyone"
+msgstr "任何人"
+
+msgid "None"
+msgstr "无"
+
+msgid "Select user"
+msgstr "选择用户"
+
+msgid "Please specify a range"
+msgstr "请指定范围"
+
+msgid "Start date must be before the end date"
+msgstr "开始日期必须在结束日期之前"
+
+msgid "From"
+msgstr "从"
+
+msgid "to"
+msgstr "到"
+
+msgid "To"
+msgstr "至"
+
+msgid "Period"
+msgstr "期间"
+
+msgid "Please provide zero or a positive integer"
+msgstr "0或负整数"
+
+msgid "Please specify the number of days"
+msgstr "请注明天数"
+
+msgid "Days in the past"
+msgstr "过去的天数"
+
+msgid "Days in the future"
+msgstr "未来的天数"
+
+msgid "This week"
+msgstr "本周"
+
+msgid "This month"
+msgstr "本月"
+
+msgid "This year"
+msgstr "今年"
+
+msgid "Last week"
+msgstr "上周"
+
+msgid "Last month"
+msgstr "上月"
+
+msgid "Last 3 months"
+msgstr "最近3个月"
+
+msgid "Absolute range"
+msgstr "绝对范围"
+
+msgid "Relative range"
+msgstr "相对范围"
+
+msgid "Please specify a date"
+msgstr "请注明日期"
+
+msgid "The \"Before\" value must be after the \"After\" value"
+msgstr "前 \"值必须在 \"后 \"值之后"
+
+msgid "After"
+msgstr "之后"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Time"
+msgstr "时间"
+
+msgid "Before"
+msgstr "之前"
+
+msgid "Is empty"
+msgstr "是空的"
+
+msgid "Is not empty"
+msgstr "不为空"
+
+msgid "Minimum value cannot be greater than maximum value"
+msgstr "最小值不能大于最大值"
+
+msgid "Please provide a valid number"
+msgstr "请提供一个有效的数字"
+
+msgid "Please provide a valid integer"
+msgstr "请提供一个整数"
+
+msgid "Please provide an integer between 0 and 100"
+msgstr "请提供 0 到 100 之间的整数"
+
+msgid "Please provide a positive integer"
+msgstr "提供一个正整数"
+
+msgid "Please provide a negative integer"
+msgstr "负整数"
+
+msgid "Min"
+msgstr "最小"
+
+msgid "Max"
+msgstr "最大"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Uploading file"
+msgstr "上传文件"
+
+msgid "selected"
+msgstr "选择的"
+
+msgid "Select file"
+msgstr "选择文件"
+
+msgid "No"
+msgstr "否"
+
+msgid "Uploading image"
+msgstr "上传图像"
+
+msgid "Select image"
+msgstr "选择图像"
+
+msgid "Type to filter options"
+msgstr "键入过滤选项"
+
+msgid "No match found"
+msgstr "未找到匹配项"
+
+msgid "Search for an {{orgUnitLabel}}"
+msgstr "搜索一个{{orgUnitLabel}}"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "No results found"
+msgstr "没有结果"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Icon for {{field}}"
+msgstr "{{field}}的图标"
+
+msgid "start typing to search"
+msgstr "开始输入搜索内容"
+
+msgid "suggestions could not be retrieved"
+msgstr "建议不能提取"
+
+msgid "Data for offline list not present"
+msgstr "离线列表的数据不存在"
+
+msgid "No items to display"
+msgstr "无条目可显示"
+
+msgid "Tracked entity is deactivated"
+msgstr "跟踪实体 已停用"
+
+msgid "Select columns"
+msgstr "选择列"
+
+msgid "Columns to show in table"
+msgstr "表中显示的列"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Column"
+msgstr "列"
+
+msgid "Visible"
+msgstr "可见"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Reset filter"
+msgstr "重置过滤器"
+
+msgid "Remove filter"
+msgstr "移除过滤器"
+
+msgid "Minimum characters to search is too high for this filter."
+msgstr "对于此过滤器来说，搜索的最小字符数过高。"
+
+msgid "Please enter at least {{minCharactersToSearch}} character to filter"
+msgid_plural ""
+"Please enter at least {{minCharactersToSearch}} character to filter"
+msgstr[0] "请输入至少{{minCharactersToSearch}} 字符进行筛选"
+
+msgid "Locked to{{escape}} {{buttonText}}"
+msgstr "锁定{{escape}} {{buttonText}}"
+
+msgid "{{fromDate}} to {{toDate}}"
+msgstr "{{fromDate}} 到 {{toDate}}"
+
+msgid "after or equal to {{date}}"
+msgstr "晚于或等于 {{date}}"
+
+msgid "before or equal to {{date}}"
+msgstr "早于或等于 {{date}}"
+
+msgid "{{start}} days in the past to {{end}} days in the future"
+msgstr "{{start}} 过去数日至{{end}} 未来数日"
+
+msgid "{{from}} to {{to}}"
+msgstr "{{from}} 至{{to}}"
+
+msgid "greater than or equal to {{value}}"
+msgstr "大于或等于{{value}}"
+
+msgid "less than or equal to {{value}}"
+msgstr "小于或等于{{value}}"
+
+msgid "after or equal to"
+msgstr "晚或等于"
+
+msgid "before or equal to"
+msgstr "前或等于"
+
+msgid "More filters"
+msgstr "更多过滤器"
+
+msgid "{{programStageLabel}} filters"
+msgstr "{{programStageLabel}} 过滤器"
+
+msgid "Rows per page"
+msgstr "行每页"
+
+msgid "Could not get {{orgUnitLabel}}"
+msgstr "无法获取{{orgUnitLabel}}"
+
+msgid "Program doesn't exist"
+msgstr "项目不存在"
+
+msgid "Selected program is invalid for selected {{orgUnitLabel}}"
+msgstr "所选程序对所选内容无效{{orgUnitLabel}}"
+
+msgid "Add {{noteLabel}}"
+msgstr "添加{{noteLabel}}"
+
+msgid "Write {{noteLabel}}"
+msgstr "写{{noteLabel}}"
+
+msgid "{{fieldName}} was blanked out and hidden by your last action"
+msgstr "{{fieldName}} 已被您的上一个操作清除和隐藏"
+
+msgid "Notice"
+msgstr "注意"
+
+msgid "Close the notice"
+msgstr "关闭通知"
+
+msgid "Quick actions"
+msgstr "快速行动"
+
+msgid "Schedule an {{eventLabel}}"
+msgstr "预约{{eventLabel}}"
+
+msgid "Make referral"
+msgstr "生成转诊/迁移"
+
+msgid "No available {{programStagesLabel}}"
+msgstr "无可用{{programStagesLabel}}"
+
+msgid "Invalid {{enrollmentLabel}} id {{enrollmentId}}."
+msgstr "{{enrollmentLabel}} 标识符{{enrollmentId}} 无效。"
+
+msgid "Choose an {{enrollmentLabel}} to view the dashboard."
+msgstr "选择一个{{enrollmentLabel}} 来查看仪表盘。"
+
+msgid ""
+"Choose a program to add new or see existing {{enrollmentsLabel}} for "
+"{{teiDisplayName}}"
+msgstr "选择一个项目，以添加新的或查看现有的{{enrollmentsLabel}} ，用于{{teiDisplayName}}"
+
+msgid ""
+"{{programName}} has categories. Choose all categories to view dashboard."
+msgstr "{{programName}}具有类别。选择所有类别以查看仪表板。"
+
+msgid "There are no active {{enrollmentsLabel}}."
+msgstr "目前没有活跃的{{enrollmentsLabel}} 。"
+
+msgid "Add new {{enrollmentLabel}} for {{teiDisplayName}} in this program."
+msgstr "在此程序中为{{teiDisplayName}} 添加新的{{enrollmentLabel}} 。"
+
+msgid "{{teiDisplayName}} is not enrolled in this program."
+msgstr "{{teiDisplayName}} 未在该项目中登记。"
+
+msgid "Enroll {{teiDisplayName}} in this program."
+msgstr "在此项目中登记{{teiDisplayName}}。"
+
+msgid ""
+"{{teiDisplayName}} is a {{tetName}} and cannot be enrolled in the "
+"{{programName}}. Choose another program that allows {{tetName}} "
+"{{enrollmentLabel}}. "
+msgstr ""
+"{{teiDisplayName}} 该课程属于{{tetName}} ，无法注册{{programName}} "
+"。请选择另一门允许{{tetName}} 的课程{{enrollmentLabel}} 。 "
+
+msgid "Enroll a new {{selectedTetName}} in this program."
+msgstr "在此项目中登记新的{{selectedTetName}}。"
+
+msgid ""
+"{{programName}} is an event program and does not have {{enrollmentsLabel}}."
+msgstr "{{programName}} 这是一个事件 项目，且不包含{{enrollmentsLabel}} 。"
+
+msgid "Create a new {{eventLabel}} in this program."
+msgstr "在此程序中创建一个新的{{eventLabel}} 。"
+
+msgid "View working list in this program."
+msgstr "查看此项目中的工作清单。"
+
+msgid "{{enrollmentLabel}} with id \"{{enrollmentId}}\" does not exist"
+msgstr "{{enrollmentLabel}} ID 为“{{enrollmentId}} ”的记录不存在"
+
+msgid "Tracked entity instance with id \"{{teiId}}\" does not exist"
+msgstr "ID为“ {{teiId}}”的跟踪实体实例不存在"
+
+msgid "Program with id \"{{programId}}\" does not exist"
+msgstr "ID 为“{{programId}}”的项目不存在"
+
+msgid ""
+"An error occurred while fetching {{enrollmentsLabel}}. Please enter a valid "
+"url."
+msgstr "在获取{{enrollmentsLabel}} 时发生错误。请输入有效的网址。"
+
+msgid "An error has occurred"
+msgstr "发生了错误"
+
+msgid "Page is missing required values from URL"
+msgstr "页面缺少 URL 中的必需值"
+
+msgid "There was an error opening the Page"
+msgstr "打开页面时出错"
+
+msgid "There was an error loading the page"
+msgstr "加载页面时出错"
+
+msgid "{{programStageLabel}} is invalid"
+msgstr "{{programStageLabel}} 无效"
+
+msgid "{{programStageLabel}} not found"
+msgstr "{{programStageLabel}} 未找到"
+
+msgid "Report"
+msgstr "报表"
+
+msgid "Schedule"
+msgstr "调度"
+
+msgid "Refer"
+msgstr "转诊"
+
+msgid "You can't add any more {{ programStageName }} {{eventsLabel}}"
+msgstr "您无法再添加任何{{ programStageName }} {{eventsLabel}}"
+
+msgid "Cancel without saving"
+msgstr "取消而不保存"
+
+msgid "Choose a {{programStageLabel}} for a new {{eventLabel}}"
+msgstr "选择一款{{programStageLabel}} 作为新款{{eventLabel}}"
+
+msgid "{{programStagesLabel}} could not be loaded"
+msgstr "{{programStagesLabel}} 无法加载"
+
+msgid "The category option is not valid for the selected {{orgUnitLabel}}."
+msgstr "所选的{{orgUnitLabel}} 不支持该分类选项。"
+
+msgid "Please select a valid combination."
+msgstr "请选择一个有效的组合。"
+
+msgid "Get started with Capture app"
+msgstr "开始使用采集应用程序"
+
+msgid "Report data"
+msgstr "报表数据"
+
+msgid ""
+"Choose a program and organisation unit to see existing data and create new "
+"records."
+msgstr "选择项目和组织机构，查看现有数据和创建新记录。"
+
+msgid "Click 'Search'. For program-specific results, choose a program first."
+msgstr "点击 \"搜索\"。如需特定项目的搜索结果，请先选择一个项目。"
+
+msgid "Learn more about Capture app"
+msgstr "了解有关采集应用程序的更多信息"
+
+msgid "Please select {{category}}."
+msgstr "请选择 {{category}}."
+
+msgid "Please select an {{orgUnitLabel}}"
+msgstr "请选择一个{{orgUnitLabel}}"
+
+msgid "See working list without {{orgUnitLabel}}"
+msgstr "查看不含该项的工作清单{{orgUnitLabel}}"
+
+msgid "Search for a {{trackedEntityName}}"
+msgstr "搜索{{trackedEntityName}}"
+
+msgid "Registered {{eventsLabel}}"
+msgstr "已注册{{eventsLabel}}"
+
+msgid ""
+"You don't have access to create a {{trackedEntityName}} in the current "
+"selections"
+msgstr "您没有权限在当前选择中创建{{trackedEntityName}} "
+
+msgid "Choose an {{orgUnitLabel}} to start reporting"
+msgstr "选择一个{{orgUnitLabel}} 以开始生成报告"
+
+msgid "Choose the {{missingCategories}} to start reporting"
+msgstr "选择{{missingCategories}}开始报告"
+
+msgid "Save as new"
+msgstr "另存为新"
+
+msgid "New"
+msgstr "新建"
+
+msgid ""
+"You can also choose a program from the top bar and create in that program"
+msgstr "您也可以从顶部栏中选择一个项目并在该项目中创建"
+
+msgid "New {{enrollmentLabel}} in program{{escape}} {{programName}}"
+msgstr "程序{{escape}} 中新增了{{enrollmentLabel}} {{programName}}"
+
+msgid "Save {{trackedEntityTypeName}}"
+msgstr "保存 {{trackedEntityTypeName}}"
+
+msgid "Save {{trackedEntityName}}"
+msgstr "保存{{trackedEntityName}}"
+
+msgid ""
+"Enter details now is not available when creating a {{relationshipLabel}}"
+msgstr "在创建时，“立即输入详细信息”功能不可用{{relationshipLabel}}"
+
+msgid "Save new {{trackedEntityTypeName}} and link"
+msgstr "保存新的{{trackedEntityTypeName}}并链接"
+
+msgid "Link"
+msgstr "链接"
+
+msgid "Save as new {{trackedEntityName}}"
+msgstr "另存为新的{{trackedEntityName}}"
+
+msgid "Some programs are being filtered."
+msgstr "有些项目已经被过滤了"
+
+msgid "Show all"
+msgstr "显示全部"
+
+msgid "Program"
+msgstr "项目"
+
+msgid "Registration"
+msgstr "注册"
+
+msgid "Search results"
+msgstr "搜索结果"
+
+msgid "No {{trackedEntityTypeName}} found."
+msgstr "没有发现  {{trackedEntityTypeName}} "
+
+msgid "New search"
+msgstr "新搜索"
+
+msgid "Edit search"
+msgstr "编辑搜索"
+
+msgid "Link to an existing {{trackedEntityType}}"
+msgstr "链接到存在的 {{trackedEntityType}}"
+
+msgid "Create new {{trackedEntityType}}"
+msgstr "创建新的{{trackedEntityType}}"
+
+msgid "Register"
+msgstr "注册"
+
+msgid "Back"
+msgstr "后退"
+
+msgid "{{count}} {{eventLabel}}"
+msgid_plural "{{count}} {{eventLabel}}"
+msgstr[0] "{{count}} {{eventsLabel}}"
+
+msgid "{{eventLabel}} details"
+msgstr "{{eventLabel}} 详情"
+
+msgid ""
+"Leaving this page will discard any selections you made for a new "
+"{{relationshipLabel}}"
+msgstr "离开此页面将取消您为新项目所做的任何选择{{relationshipLabel}}"
+
+msgid "Errors"
+msgstr "错误"
+
+msgid "This {{eventLabel}} doesn't have any {{notesLabel}}"
+msgstr "这款{{eventLabel}} 没有{{notesLabel}}"
+
+msgid "This {{eventLabel}} doesn't have any {{relationshipsLabel}}"
+msgstr "这款{{eventLabel}} 没有{{relationshipsLabel}}"
+
+msgid "Warnings"
+msgstr "错误"
+
+msgid "{{eventLabel}} could not be loaded. Are you sure it exists?"
+msgstr "{{eventLabel}} 无法加载。您确定该文件存在吗？"
+
+msgid "{{eventLabel}} could not be loaded"
+msgstr "{{eventLabel}} 无法加载"
+
+msgid ""
+"Could not load the requested data. It may not exist or you may not have "
+"access."
+msgstr "无法加载所请求的数据 。该文件可能不存在，或者您可能没有访问权限。"
+
+msgid "{{orgUnitLabel}} could not be loaded"
+msgstr "{{orgUnitLabel}} 无法加载"
+
+msgid "tracked entity instance"
+msgstr "跟踪的实体实例"
+
+msgid "All accessible"
+msgstr "所有可访问的"
+
+msgid "Selected"
+msgstr "选择的"
+
+msgid "Please select an {{orgUnitLabel}}."
+msgstr "请选择一个{{orgUnitLabel}} 。"
+
+msgid "{{orgUnitLabel}} scope"
+msgstr "{{orgUnitLabel}} 范围"
+
+msgid "Selected program"
+msgstr "选择的项目"
+
+msgid "Search {{uniqueAttrName}}"
+msgstr "搜索 {{uniqueAttrName}}"
+
+msgid "Search by {{attributesLabel}}"
+msgstr "按以下条件搜索{{attributesLabel}}"
+
+msgid "Fill in at least {{count}} {{attributeLabel}} to search"
+msgid_plural "Fill in at least {{count}} {{attributeLabel}} to search"
+msgstr[0] "请至少填写{{count}} {{attributesLabel}} 进行搜索"
+
+msgid "Search {{attributeName}}"
+msgstr "搜索{{attributeName}}"
+
+msgid "Missing search criteria"
+msgstr "缺少搜索条件"
+
+msgid "Please fill in {{uniqueTEAName}} to search"
+msgstr "请填写{{uniqueTEAName}} 进行搜索"
+
+msgid "Back to search"
+msgstr "返回搜寻"
+
+msgid "Search form is missing. See log for details"
+msgstr "搜索表单 丢失。详见日志"
+
+msgid "Could not retrieve metadata. Please try again later."
+msgstr "无法检索元数据。请稍后再试。"
+
+msgid "The {{enrollmentLabel}} {{eventLabel}} data could not be found"
+msgstr "无法找到{{enrollmentLabel}} {{eventLabel}} 数据 "
+
+msgid "Loading"
+msgstr "载入"
+
+msgid "An error occurred while loading the form"
+msgstr "加载表格时发生错误"
+
+msgid "First Page"
+msgstr "第一页"
+
+msgid "Previous Page"
+msgstr "上一页"
+
+msgid "Next Page"
+msgstr "下一页"
+
+msgid "Possible duplicates found"
+msgstr "发现可能的重复"
+
+msgid "An error occurred loading possible duplicates"
+msgstr "加载可能的重复项时发生错误"
+
+msgid "View only - {{message}}"
+msgstr "仅限查看 -{{message}}"
+
+msgid "View only"
+msgstr "只读"
+
+msgid "You only have view access to this {{enrollmentLabel}}"
+msgstr "您对此仅具有查看权限{{enrollmentLabel}}"
+
+msgid "You only have view access to this program"
+msgstr "您对该程序仅具有查看权限"
+
+msgid "You only have view access to this {{trackedEntityName}}"
+msgstr "您对此仅具有查看权限{{trackedEntityName}}"
+
+msgid "You only have view access to this tracked entity type"
+msgstr "您对该跟踪实体 类型仅具有查看权限"
+
+msgid "You only have view access to these {{programStagesLabel}}"
+msgstr "您对这些内容仅具有查看权限{{programStagesLabel}}"
+
+msgid "You only have view access to this {{programStageLabel}}"
+msgstr "您对此仅具有查看权限{{programStageLabel}}"
+
+msgid "This {{eventLabel}} is outside the editing period"
+msgstr "该{{eventLabel}} 已超出编辑期限"
+
+msgid "This {{eventLabel}} has been completed"
+msgstr "该{{eventLabel}} 项目已完工"
+
+msgid "You do not have access to uncomplete this {{eventLabel}}"
+msgstr "您无权撤销此操作{{eventLabel}}"
+
+msgid "This {{trackedEntityName}} is deactivated"
+msgstr "该{{trackedEntityName}} 已停用"
+
+msgid "This tracked entity is deactivated"
+msgstr "该跟踪实体 已停用"
+
+msgid "You only have view access to the selected category combination"
+msgstr "您对所选的类别组合仅具有查看权限"
+
+msgid "Add {{relationshipLabel}}"
+msgstr "添加{{relationshipLabel}}"
+
+msgid "No results found for "
+msgstr "没有找到结果"
+
+msgid "Choose an {{orgUnitLabel}} in the form below"
+msgstr "请从下方的表单 中选择一款{{orgUnitLabel}} "
+
+msgid "None selected"
+msgstr "没有选择"
+
+msgid "Choose an {{orgUnitLabel}}"
+msgstr "选择一个{{orgUnitLabel}}"
+
+msgid "Choose a {{categoryName}}"
+msgstr "选择一个{{categoryName}}"
+
+msgid "Search for a {{categoryName}}"
+msgstr "搜索{{categoryName}}"
+
+msgid "Clear selection"
+msgstr "清空选项"
+
+msgid "No programs available."
+msgstr "无可用项目"
+
+msgid "Search for a program"
+msgstr "搜索项目"
+
+msgid "Some programs are being filtered by the chosen organisation unit"
+msgstr "某些项目正在被所选机构过滤"
+
+msgid "Show all programs"
+msgstr "显示所有项目"
+
+msgid "Choose a program"
+msgstr "选择一个项目"
+
+msgid "Choose a {{title}}"
+msgstr "选择一个{{title}}"
+
+msgid "Search for a {{title}}"
+msgstr "搜索{{title}}"
+
+msgid ""
+"You can also select a program from the top bar to search within that "
+"program."
+msgstr "您还可以从顶部栏选择一个项目计划，在该项目内进行搜索。"
+
+msgid "Choose a type to start searching"
+msgstr "选择一种类型以开始搜索"
+
+msgid "{{trackedEntityName}} has no searchable {{attributesLabel}}"
+msgstr "{{trackedEntityName}} 无法搜索{{attributesLabel}}"
+
+msgid ""
+"Try selecting a different tracked entity type, or try searching in a program"
+" by choosing one from the top bar."
+msgstr "尝试选择不同的跟踪实体类型，或尝试从顶部栏中选择一个项目进行搜索。"
+
+msgid "Search for {{titleText}}"
+msgstr "搜索{{titleText}}"
+
+msgid "Search {{name}}"
+msgstr "搜索{{name}}"
+
+msgid "Search by {{name}}"
+msgstr "按{{name}}搜索"
+
+msgid "all programs"
+msgstr "所有项目"
+
+msgid ""
+"Not finding the results you were looking for? Try searching in all programs."
+msgstr "没有找到您想要的结果？请尝试搜索所有项目。"
+
+msgid "No searchable {{attributesLabel}} for {{trackedEntityName}}"
+msgstr "未找到可搜索的{{attributesLabel}} ，对应于{{trackedEntityName}}"
+
+msgid "Search in all programs"
+msgstr "搜索所有项目"
+
+msgid ""
+"If none of search results match, you can create a new {{trackedEntityName}}."
+msgstr "如果搜索结果都不匹配，您可以创建一个新的{{trackedEntityName}} 。"
+
+msgid "Create new"
+msgstr "新建"
+
+msgid "Fill in these fields to search{{escape}} {{ searchableAttributes }}"
+msgstr "填写这些字段进行搜索{{escape}} {{ searchableAttributes }}"
+
+msgid ""
+"Fill in at least {{minAttributesRequiredToSearch}} of these fields to "
+"search{{escape}} {{searchableAttributes}}"
+msgstr ""
+"至少填写 {{minAttributesRequiredToSearch}} 这些字段以进行搜索{{escape}} "
+"{{searchableAttributes}}"
+
+msgid ""
+"Fill in this {{attributeLabel}} to search{{escape}} {{searchableAttributes}}"
+msgstr "请填写此表单{{attributeLabel}} 以搜索{{escape}} {{searchableAttributes}}"
+
+msgid ""
+"You can change your search terms and search again to find what you are "
+"looking for."
+msgstr "您可以更改搜索条件，然后再次搜索以查找所需内容。"
+
+msgid "Create new {{trackedEntityName}}"
+msgstr "创建新的{{trackedEntityName}}"
+
+msgid ""
+"There is a problem with this search, please change the search terms or try "
+"again later."
+msgstr "此搜索有问题，请更改搜索条件或稍后再试。"
+
+msgid "For more details open the Console tab of the Developer tools"
+msgstr "要了解更多详情，请打开 \"开发工具 \"的 \"控制台 \"选项卡"
+
+msgid "Too many results"
+msgstr "结果太多"
+
+msgid "This search returned too many results to show."
+msgstr "搜索结果太多，无法显示。"
+
+msgid ""
+"Try changing search terms or searching by more {{attributesLabel}} to narrow"
+" down the results."
+msgstr "请尝试更改搜索词，或通过更多{{attributesLabel}} 进行搜索，以缩小搜索结果范围。"
+
+msgid "Cannot search in all programs"
+msgstr "无法在所有项目中搜索"
+
+msgid "Results found in {{currentSearchScopeName}}"
+msgstr "结果见{{currentSearchScopeName}}"
+
+msgid "Results found"
+msgstr "找到的结果"
+
+msgid "Saved lists in this program"
+msgstr "此项目中保存的列表"
+
+msgid "Saved lists offer quick access to your most used views in a program."
+msgstr "保存的列表提供对项目中最常用视图的快速访问。"
+
+msgid ""
+"There are no saved lists in this program yet, create one using the button "
+"below."
+msgstr "此项目中还没有保存的列表，请使用下面的按钮创建一个。"
+
+msgid "Create saved list"
+msgstr "创建保存列表"
+
+msgid "Create new in another program..."
+msgstr "在另一个程序中新建..."
+
+msgid "Create new {{eventLabel}}"
+msgstr "创建新项{{eventLabel}}"
+
+msgid "Search for a {{trackedEntityName}} in {{programName}}"
+msgstr "在{{programName}}中搜索{{trackedEntityName}}"
+
+msgid "Search..."
+msgstr "搜索..."
+
+msgid "Select tracked entity type"
+msgstr "选择跟踪实体 类型"
+
+msgid "Type to filter tracked entity types"
+msgstr "筛选跟踪实体 类型"
+
+msgid "No tracked entity types available"
+msgstr "没有可跟踪的实体类型"
+
+msgid "Assigned to"
+msgstr "指派到"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "No one is assigned to this {{eventLabel}}"
+msgstr "此任务尚未分配给任何人{{eventLabel}}"
+
+msgid "Assign"
+msgstr "分配"
+
+msgid "Check for {{enrollmentsLabel}}"
+msgstr "检查是否{{enrollmentsLabel}}"
+
+msgid "This program is protected"
+msgstr "该项目受保护"
+
+msgid ""
+"You must provide a reason to check for {{enrollmentsLabel}} in this "
+"protected program."
+msgstr "您必须提供理由，才能在此受保护的程序中检查{{enrollmentsLabel}} 。"
+
+msgid "All activity will be logged."
+msgstr "所有活动都将记录在案。"
+
+msgid "Reason to check for {{enrollmentsLabel}}"
+msgstr "需要检查的原因{{enrollmentsLabel}}"
+
+msgid ""
+"Describe the reason you are checking for {{enrollmentsLabel}} in this "
+"protected program"
+msgstr "请说明您为何要在该受保护的程序中检查{{enrollmentsLabel}} "
+
+msgid "Unsaved changes"
+msgstr "未保存的更改"
+
+msgid "Continue data entry"
+msgstr "继续输入数据"
+
+msgid "{{enrollmentLabel}} actions"
+msgstr "{{enrollmentLabel}} 操作"
+
+msgid "We are processing your request."
+msgstr "我们正在处理您的请求。"
+
+msgid ""
+"Only one {{enrollmentLabel}} per {{tetName}} is allowed in this program"
+msgstr "本项目规定，每个{{tetName}} 仅允许使用一个{{enrollmentLabel}} "
+
+msgid "Add new"
+msgstr "新加"
+
+msgid "Reactivate"
+msgstr "重新激活"
+
+msgid "Mark as cancelled"
+msgstr "标记为已取消"
+
+msgid "You do not have access to delete this {{enrollmentLabel}}"
+msgstr "您无权删除此内容{{enrollmentLabel}}"
+
+msgid "Delete {{enrollmentLabel}}"
+msgstr "删除{{enrollmentLabel}}"
+
+msgid "Are you sure you want to delete this {{enrollmentLabel}}?"
+msgstr "您确定要删除此{{enrollmentLabel}} 吗？"
+
+msgid "This will permanently remove the current {{enrollmentLabel}}."
+msgstr "这将永久删除当前的{{enrollmentLabel}} 。"
+
+msgid "Yes, delete {{enrollmentLabel}}."
+msgstr "是的，请删除{{enrollmentLabel}} 。"
+
+msgid "Remove mark for {{followUpLabel}}"
+msgstr "取消选中{{followUpLabel}}"
+
+msgid "Mark for {{followUpLabel}}"
+msgstr "标记为{{followUpLabel}}"
+
+msgid "Transfer"
+msgstr "转移"
+
+msgid "An error occurred while transferring ownership"
+msgstr "转移所有权时发生错误"
+
+msgid "Edit {{label}}"
+msgstr "编辑{{label}}"
+
+msgid "Existing dates for auto-generated {{eventsLabel}} will not be updated."
+msgstr "自动生成的{{eventsLabel}} 的现有日期将不会更新。"
+
+msgid "Latitude"
+msgstr "维度"
+
+msgid "Longitude"
+msgstr "经度"
+
+msgid "Set coordinates"
+msgstr "设置坐标"
+
+msgid "Coordinates"
+msgstr "坐标"
+
+msgid "Please provide valid coordinates"
+msgstr "请提供有效坐标"
+
+msgid "Delete polygon"
+msgstr "删除多边形"
+
+msgid "Close without saving"
+msgstr "关闭而不保存"
+
+msgid "Finish drawing before saving"
+msgstr "保存前完成绘制"
+
+msgid "Set area"
+msgstr "设置区域"
+
+msgid ""
+"Transferring {{enrollmentLabel}} ownership from {{ownerOrgUnit}} to "
+"{{newOrgUnit}}{{escape}}"
+msgstr ""
+"将{{enrollmentLabel}} 的所有权从{{ownerOrgUnit}} 转移至{{newOrgUnit}}{{escape}}"
+
+msgid "Transfer Ownership"
+msgstr "所有权转让"
+
+msgid ""
+"Choose the {{orgUnitLabel}} to which {{enrollmentLabel}} ownership should be"
+" transferred."
+msgstr "选择应将{{enrollmentLabel}} 的所有权转移至哪个{{orgUnitLabel}} 。"
+
+msgid "{{enrollmentLabel}} date"
+msgstr "{{enrollmentLabel}} 日期"
+
+msgid "Incident date"
+msgstr "事件发生日期"
+
+msgid "{{enrollmentLabel}} widget could not be loaded. Please try again later"
+msgstr "{{enrollmentLabel}} 无法加载小部件。请稍后再试"
+
+msgid "Started at{{escape}}"
+msgstr "开始于{{escape}}"
+
+msgid "Owned by{{escape}}"
+msgstr "所有者{{escape}}"
+
+msgid "Cancelled"
+msgstr "已取消"
+
+msgid "Add coordinates"
+msgstr "添加坐标"
+
+msgid "Add area"
+msgstr "添加区域"
+
+msgid "{{orgUnitLabel}} could not be retrieved. Please try again later."
+msgstr "{{orgUnitLabel}} 无法检索到该内容。请稍后再试。"
+
+msgid "Saving to {{stageName}} for {{programName}} in {{orgUnitName}}"
+msgstr "为 {{orgUnitName}} 中的 {{programName}} 保存到 {{stageName}}"
+
+msgid "Saving to {{stageName}} for {{programName}}"
+msgstr "保存到{{stageName}} ，以便{{programName}}"
+
+msgid "Program or {{programStageLabel}} is invalid"
+msgstr "程序或{{programStageLabel}} 无效"
+
+msgid "{{notesLabel}} about this {{enrollmentLabel}}"
+msgstr "{{notesLabel}} 关于这一点{{enrollmentLabel}}"
+
+msgid "Write a {{noteLabel}} about this {{enrollmentLabel}}"
+msgstr "关于此内容，请撰写一篇{{noteLabel}} 文章{{enrollmentLabel}}"
+
+msgid "This {{enrollmentLabel}} doesn't have any {{notesLabel}}"
+msgstr "这款{{enrollmentLabel}} 没有{{notesLabel}}"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "{{programStageLabel}} not found in rules execution"
+msgstr "{{programStageLabel}} 在规则执行中未找到"
+
+msgid "Are you sure you want to delete this {{eventLabel}}? "
+msgstr "您确定要删除此{{eventLabel}} 吗？ "
+
+msgid "Go to “Schedule” tab to reschedule this {{eventLabel}}"
+msgstr "转到“日程安排”选项卡以重新安排此事项{{eventLabel}}"
+
+msgid "Scheduled date cannot be changed for {{ eventStatus }} {{eventsLabel}}"
+msgstr "{{ eventStatus }} 的预定日期无法更改{{eventsLabel}}"
+
+msgid "Geometry (Area)"
+msgstr "几何（面积）"
+
+msgid "Geometry (Coordinate)"
+msgstr "几何（坐标）"
+
+msgid "Polygon captured"
+msgstr "采集的多边形。"
+
+msgid "No polygon captured"
+msgstr "没有采集到多边形"
+
+msgid "{{eventLabel}} completed"
+msgstr "{{eventLabel}} 已完成"
+
+msgid "{{notesLabel}} about this {{eventLabel}}"
+msgstr "{{notesLabel}} 关于这一点{{eventLabel}}"
+
+msgid "Write a {{noteLabel}} about this {{eventLabel}}"
+msgstr "关于此内容，请撰写一篇{{noteLabel}} 文章{{eventLabel}}"
+
+msgid "after"
+msgstr "后"
+
+msgid "before"
+msgstr "前"
+
+msgid "Scheduled automatically for {{suggestedScheduleDate}}"
+msgstr "自动安排在 {{suggestedScheduleDate}}"
+
+msgid ""
+"The scheduled date matches the suggested date, but can be changed if needed."
+msgstr "预定日期与建议日期相符，但可以根据需要进行更改。"
+
+msgid "The scheduled date is {{count}} days {{position}} the suggested date."
+msgid_plural ""
+"The scheduled date is {{count}} days {{position}} the suggested date."
+msgstr[0] "预定日期是 {{count}} 天 {{position}} 建议的日期。"
+
+msgid "Schedule date / Due date"
+msgstr "计划日期/截止日期"
+
+msgid ""
+"Scheduling an {{eventLabel}} in {{stageName}} for {{programName}} in "
+"{{orgUnitName}}"
+msgstr ""
+"在{{stageName}} 中为{{programName}} 安排{{eventLabel}} 会议，地点为{{orgUnitName}}"
+
+msgid "Scheduling an {{eventLabel}} in {{stageName}} for {{programName}}"
+msgstr "在{{stageName}} 中为{{eventLabel}} 安排日程，用于{{programName}}"
+
+msgid "Schedule info"
+msgstr "日程信息"
+
+msgid "{{eventLabel}} {{notesLabel}}"
+msgstr "{{eventLabel}} {{notesLabel}}"
+
+msgid "Write a {{noteLabel}} about this scheduled {{eventLabel}}"
+msgstr "就此次安排撰写一篇{{noteLabel}} {{eventLabel}}"
+
+msgid "Feedback"
+msgstr "反馈"
+
+msgid "Indicators"
+msgstr "指标"
+
+msgid "Save {{noteLabel}}"
+msgstr "保存{{noteLabel}}"
+
+msgid "Edit {{trackedEntityName}}"
+msgstr "编辑{{trackedEntityName}}"
+
+msgid "Save changes"
+msgstr "保存修改"
+
+msgid "Change information about this {{trackedEntityName}} here."
+msgstr "在此更改有关{{trackedEntityName}} 的信息。"
+
+msgid ""
+"Information about this {{enrollmentLabel}} can be edited in the "
+"{{enrollmentLabel}} widget."
+msgstr "有关此{{enrollmentLabel}} 的信息可在{{enrollmentLabel}} 小部件中进行编辑。"
+
+msgid "{{trackedEntityName}} profile"
+msgstr "{{trackedEntityName}} 个人资料"
+
+msgid "Profile"
+msgstr "基本信息"
+
+msgid "There is a problem with this form"
+msgstr "这个表单有问题"
+
+msgid "There are warnings in this form"
+msgstr "此表单中有警告"
+
+msgid "There was a problem saving changes"
+msgstr "保存更改时出现问题"
+
+msgid "Try again or contact your system administrator for support"
+msgstr "重试或联系您的系统管理员寻求支持"
+
+msgid "Fix errors in the form to continue."
+msgstr "修正表单中的错误以继续。"
+
+msgid "Activate {{trackedEntityTypeName}}"
+msgstr "激活{{trackedEntityTypeName}}"
+
+msgid "Deactivate {{trackedEntityTypeName}}"
+msgstr "停用{{trackedEntityTypeName}}"
+
+msgid ""
+"Are you sure you want to activate this {{trackedEntityTypeName}}? This will "
+"change its status to active and write operations will be allowed."
+msgstr "您确定要激活此{{trackedEntityTypeName}} 吗？此操作将使其状态变为“活动”，并允许写入操作。"
+
+msgid ""
+"Are you sure you want to deactivate this {{trackedEntityTypeName}}? This "
+"will change its status to inactive and only read operations will be allowed."
+msgstr "您确定要停用此{{trackedEntityTypeName}} 吗？此操作将使其状态变为“停用”，且仅允许读取操作。"
+
+msgid "Yes, activate {{trackedEntityTypeName}}"
+msgstr "是的，激活{{trackedEntityTypeName}}"
+
+msgid "Yes, deactivate {{trackedEntityTypeName}}"
+msgstr "是的，停用{{trackedEntityTypeName}}"
+
+msgid "There was a problem activating the {{trackedEntityTypeName}}"
+msgstr "激活时出现了一个问题，{{trackedEntityTypeName}}"
+
+msgid "There was a problem deactivating the {{trackedEntityTypeName}}"
+msgstr "停用该功能时出现了一个问题，{{trackedEntityTypeName}}"
+
+msgid "You do not have access to delete this {{trackedEntityTypeName}}"
+msgstr "您无权删除此{{trackedEntityTypeName}}"
+
+msgid "Delete {{trackedEntityTypeName}}"
+msgstr "删除{{trackedEntityTypeName}}"
+
+msgid ""
+"Are you sure you want to delete this {{trackedEntityTypeName}}? This will "
+"permanently remove the {{trackedEntityTypeName}} and all its associated "
+"{{enrollmentsLabel}} and {{eventsLabel}} in all programs."
+msgstr ""
+"您确定要删除此{{trackedEntityTypeName}} 吗？此操作将永久删除{{trackedEntityTypeName}} "
+"以及所有程序中与其关联的{{enrollmentsLabel}} 和{{eventsLabel}} 。"
+
+msgid "There was a problem deleting the {{trackedEntityTypeName}}"
+msgstr "删除{{trackedEntityTypeName}}时出现问题"
+
+msgid "Yes, delete {{trackedEntityTypeName}}"
+msgstr "是，删除 {{trackedEntityTypeName}}"
+
+msgid "View profile"
+msgstr "查看简介"
+
+msgid "Profile widget could not be loaded. Please try again later"
+msgstr "无法加载个人资料窗口小部件。请稍后再试"
+
+msgid "No {{attributesLabel}} configured for {{trackedEntityTypeName}}"
+msgstr "未为以下内容配置{{attributesLabel}} ：{{trackedEntityTypeName}}"
+
+msgid "No {{attributesLabel}} configured"
+msgstr "未配置{{attributesLabel}} "
+
+msgid "No {{attributesLabel}} configured to display"
+msgstr "未配置用于显示的{{attributesLabel}} "
+
+msgid "{{trackedEntityTypeName}} profile"
+msgstr "{{trackedEntityTypeName}} 个人资料"
+
+msgid "Choose a {{linkableStageLabel}} {{eventLabel}}"
+msgstr "选择一款{{linkableStageLabel}} {{eventLabel}}"
+
+msgid "Select an {{eventLabel}}"
+msgstr "选择一个{{eventLabel}}"
+
+msgid "{{ linkableStageLabel }} can only have one {{eventLabel}}"
+msgstr "{{ linkableStageLabel }} 只能有一个{{eventLabel}}"
+
+msgid "Enter details now"
+msgstr "立即输入详细信息"
+
+msgid "{{ linkableStageLabel }} has no linkable {{eventsLabel}}"
+msgstr "{{ linkableStageLabel }} 没有可链接的{{eventsLabel}}"
+
+msgid "Link to an existing {{eventLabel}}"
+msgstr "链接到一个现有的{{eventLabel}}"
+
+msgid "Actions - {{relationshipName}}"
+msgstr "行动{{relationshipName}}"
+
+msgid "Ambiguous {{relationshipsLabel}}, contact system administrator"
+msgstr "{{relationshipsLabel}} 存在歧义，请联系系统管理员"
+
+msgid "Enter details"
+msgstr "输入详细信息"
+
+msgid "Linked {{eventLabel}}"
+msgstr "相关链接{{eventLabel}}"
+
+msgid "The {{eventLabel}} was successfully linked"
+msgstr "{{eventLabel}} 已成功连接"
+
+msgid "An error occurred while linking the {{eventLabel}}"
+msgstr "在链接时发生了一个错误，{{eventLabel}}"
+
+msgid "Scheduled date"
+msgstr "调度日期"
+
+msgid "Report date"
+msgstr "填报日期"
+
+msgid "Please enter a date"
+msgstr "请输入日期"
+
+msgid "Please select a valid {{eventLabel}}"
+msgstr "请选择一个有效的{{eventLabel}}"
+
+msgid "This {{programStageLabel}} can only have one {{eventLabel}}"
+msgstr "这个{{programStageLabel}} 只能有一个{{eventLabel}}"
+
+msgid "New {{ eventName }} {{eventLabel}}"
+msgstr "新款{{ eventName }} {{eventLabel}}"
+
+msgid "Show {{ rest }} more"
+msgstr "显示 {{ rest }} 更多"
+
+msgid "Go to full {{ eventName }}"
+msgstr "转到完整的{{ eventName }}"
+
+msgid "{{eventsLabel}} could not be retrieved. Please try again later."
+msgstr "{{eventsLabel}} 无法检索到该内容。请稍后再试。"
+
+msgid "{{ overdueEvents }} overdue"
+msgstr "{{ overdueEvents }} 逾期"
+
+msgid "{{ scheduledEvents }} scheduled"
+msgstr "{{ scheduledEvents }} 已安排"
+
+msgid "No {{programStagesLabel}} found in this program"
+msgstr "未在此程序中找到{{programStagesLabel}} "
+
+msgid "{{programStagesLabel}} and {{eventsLabel}}"
+msgstr "{{programStagesLabel}} 和{{eventsLabel}}"
+
+msgid "An error occurred while unlinking and deleting the {{eventLabel}}."
+msgstr "在解除关联并删除{{eventLabel}} 时发生错误。"
+
+msgid "Unlink and delete linked {{eventLabel}}"
+msgstr "取消链接并删除已链接的项目{{eventLabel}}"
+
+msgid ""
+"Are you sure you want to remove the link and delete the linked "
+"{{eventLabel}}?"
+msgstr "您确定要移除该链接并删除链接到的{{eventLabel}} 吗？"
+
+msgid ""
+"This action permanently removes the link, linked {{eventLabel}}, and all "
+"related data."
+msgstr "此操作将永久删除该链接、链接地址{{eventLabel}} 以及所有相关链接数据 。"
+
+msgid "Yes, unlink and delete linked {{eventLabel}}"
+msgstr "是的，取消链接并删除已链接的{{eventLabel}}"
+
+msgid "Unlink {{eventLabel}}"
+msgstr "取消关联{{eventLabel}}"
+
+msgid ""
+"Are you sure you want to remove the link between these {{eventsLabel}}?"
+msgstr "您确定要删除{{eventsLabel}} 之间的链接吗？"
+
+msgid ""
+"This action removes the link itself, but the linked {{eventLabel}} will "
+"remain."
+msgstr "此操作将删除链接本身，但被链接的{{eventLabel}} 仍将保留。"
+
+msgid "Yes, unlink {{eventLabel}}"
+msgstr "是的，取消链接{{eventLabel}}"
+
+msgid "View linked {{eventLabel}}"
+msgstr "查看链接{{eventLabel}}"
+
+msgid ""
+"You do not have access to remove the link between these {{eventsLabel}}"
+msgstr "您无权删除它们之间的关联{{eventsLabel}}"
+
+msgid ""
+"You do not have access to remove the link and delete the linked "
+"{{eventLabel}}"
+msgstr "您无权移除该链接并删除被链接的内容{{eventLabel}}"
+
+msgid "An error occurred while loading the widget."
+msgstr "加载小部件时发生错误。"
+
+msgid "Scheduled"
+msgstr "已经调度"
+
+msgid "Changelog"
+msgstr "变更日志"
+
+msgid "No changes to display"
+msgstr "没有显示任何变化"
+
+msgid "Data item"
+msgstr "数据条目"
+
+msgid "Updated"
+msgstr "更新"
+
+msgid "Created"
+msgstr "已创建"
+
+msgid "Deleted"
+msgstr "删除的"
+
+msgid "Sort by date"
+msgstr "按日期排序"
+
+msgid "User"
+msgstr "用户"
+
+msgid "Sort by username"
+msgstr "按用户名排序"
+
+msgid "Sort by data item"
+msgstr "按数据项排序"
+
+msgid "Change"
+msgstr "改变"
+
+msgid "Value"
+msgstr "数值"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "New {{trackedEntityTypeName}} {{relationshipLabel}}"
+msgstr "新款{{trackedEntityTypeName}} {{relationshipLabel}}"
+
+msgid "Missing implementation step"
+msgstr "缺少实施步骤"
+
+msgid "Go back without saving {{relationshipLabel}}"
+msgstr "不保存直接返回{{relationshipLabel}}"
+
+msgid "New {{relationshipLabel}}"
+msgstr "新{{relationshipLabel}}"
+
+msgid "Link to an existing {{tetName}}"
+msgstr "链接到现有的 {{tetName}}"
+
+msgid "An error occurred while adding the {{relationshipLabel}}"
+msgstr "在添加{{relationshipLabel}}"
+
+msgid ""
+"Something went wrong while loading {{relationshipsLabel}}. Please try again "
+"later."
+msgstr "加载{{relationshipsLabel}} 时出现错误。请稍后再试。"
+
+msgid "{{trackedEntityTypeName}} {{relationshipsLabel}}"
+msgstr "{{trackedEntityTypeName}} {{relationshipsLabel}}"
+
+msgid "Delete {{relationshipLabel}}"
+msgstr "删除{{relationshipLabel}}"
+
+msgid "Deleting the {{relationshipLabel}} is permanent and cannot be undone."
+msgstr "删除{{relationshipLabel}} 操作不可逆，且无法撤销。"
+
+msgid "Are you sure you want to delete this {{relationshipLabel}}?"
+msgstr "您确定要删除此{{relationshipLabel}} 吗？"
+
+msgid "Yes, delete {{relationshipLabel}}"
+msgstr "是的，删除{{relationshipLabel}}"
+
+msgid "An error occurred while deleting the {{relationshipLabel}}."
+msgstr "删除{{relationshipLabel}} 时发生错误。"
+
+msgid "This {{enrollmentLabel}} doesn't have any {{relationshipsLabel}}"
+msgstr "这款{{enrollmentLabel}} 没有{{relationshipsLabel}}"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Created date"
+msgstr "创建日期"
+
+msgid "{{programStageLabel}} name"
+msgstr "{{programStageLabel}} 名称"
+
+msgid "Working list could not be loaded"
+msgstr "工作列表不能载入"
+
+msgid ""
+"{{occurredAt}} belongs to an expired period. {{eventLabel}} cannot be "
+"deleted"
+msgstr "{{occurredAt}} 属于已过期的时段。{{eventLabel}} 无法被删除"
+
+msgid "Download data..."
+msgstr "下载数据"
+
+msgid "an error occurred loading working lists"
+msgstr "载入工作列表发生错误"
+
+msgid "You do not have access to complete {{eventsLabel}}"
+msgstr "您无权访问完整内容{{eventsLabel}}"
+
+msgid "There is a bulk data entry with unsaved changes"
+msgstr "批量输入数据时出现未保存的更改数据"
+
+msgid "Complete {{eventsLabel}}"
+msgstr "完成{{eventsLabel}}"
+
+msgid ""
+"Are you sure you want to complete all active {{eventsLabel}} in selection?"
+msgstr "您确定要完成所选范围内所有处于活动状态的{{eventsLabel}} 吗？"
+
+msgid ""
+"There are no active {{eventsLabel}} to complete in the current selection."
+msgstr "当前选定内容中没有待完成的{{eventsLabel}} 任务。"
+
+msgid "Error completing {{eventsLabel}}"
+msgstr "完成时出错{{eventsLabel}}"
+
+msgid "There was an error completing the {{eventsLabel}}."
+msgstr "在完成{{eventsLabel}} 时发生错误。"
+
+msgid "An error occurred while completing {{eventsLabel}}"
+msgstr "在完成操作时发生错误{{eventsLabel}}"
+
+msgid "You do not have access to delete {{eventsLabel}}"
+msgstr "您无权删除{{eventsLabel}}"
+
+msgid "Delete {{eventsLabel}}"
+msgstr "删除{{eventsLabel}}"
+
+msgid "This cannot be undone."
+msgstr "这是无法挽回的。"
+
+msgid "Are you sure you want to delete the selected {{eventsLabel}}?"
+msgstr "您确定要删除所选的{{eventsLabel}} 吗？"
+
+msgid "Error deleting {{eventsLabel}}"
+msgstr "删除时出错{{eventsLabel}}"
+
+msgid ""
+"There was an error while deleting the {{eventsLabel}}. Please see the "
+"details below."
+msgstr "删除{{eventsLabel}} 时发生错误。请参阅以下详细信息。"
+
+msgid "An error occurred while deleting the {{eventsLabel}}"
+msgstr "删除时发生错误：{{eventsLabel}}"
+
+msgid "Owner {{orgUnitLabel}}"
+msgstr "所有者{{orgUnitLabel}}"
+
+msgid "Registration Date"
+msgstr "登记日期"
+
+msgid "{{eventLabel}} {{orgUnitLabel}}"
+msgstr "{{eventLabel}} {{orgUnitLabel}}"
+
+msgid "{{enrollmentLabel}} status"
+msgstr "{{enrollmentLabel}} 状态"
+
+msgid "Choose a {{programStageLabel}} to filter by {{label}}"
+msgstr "选择一个“{{programStageLabel}} ”作为筛选条件{{label}}"
+
+msgid "You do not have access to bulk complete {{enrollmentsLabel}}"
+msgstr "您无权访问批量完成功能{{enrollmentsLabel}}"
+
+msgid ""
+"An unexpected error occurred while fetching the {{enrollmentsLabel}}. Please"
+" try again."
+msgstr "在获取{{enrollmentsLabel}} 时发生了一个意外错误。请重试。"
+
+msgid "There are currently no active {{enrollmentsLabel}} in the selection."
+msgstr "当前选择中没有有效的{{enrollmentsLabel}} 。"
+
+msgid "All {{enrollmentsLabel}} are already completed or cancelled."
+msgstr "所有{{enrollmentsLabel}} 活动均已结束或取消。"
+
+msgid ""
+"This action will complete {{count}} active {{enrollmentLabel}} in your "
+"selection."
+msgid_plural ""
+"This action will complete {{count}} active {{enrollmentLabel}} in your "
+"selection."
+msgstr[0] "此操作将完成您所选内容中的{{count}} active{{enrollmentsLabel}} 。"
+
+msgid ""
+"{{count}} {{enrollmentLabel}} already marked as completed will not be "
+"changed."
+msgid_plural ""
+"{{count}} {{enrollmentLabel}} already marked as completed will not be "
+"changed."
+msgstr[0] "{{count}} {{enrollmentsLabel}} 已标记为“已完成”的项将不会被更改。"
+
+msgid "Mark all {{eventsLabel}} within {{enrollmentsLabel}} as complete"
+msgstr "将{{enrollmentsLabel}} 中所有{{eventsLabel}} 标记为已完成"
+
+msgid "Complete {{enrollmentsLabel}}"
+msgstr "完成{{enrollmentsLabel}}"
+
+msgid "No active {{enrollmentsLabel}} to complete"
+msgstr "没有待处理的{{enrollmentsLabel}} 任务"
+
+msgid "Complete {{count}} {{enrollmentLabel}}"
+msgid_plural "Complete {{count}} {{enrollmentLabel}}"
+msgstr[0] "完整文章请见{{count}} {{enrollmentsLabel}}"
+
+msgid "Error completing {{enrollmentsLabel}}"
+msgstr "完成时出错{{enrollmentsLabel}}"
+
+msgid "An error occurred when completing the {{enrollmentsLabel}}"
+msgstr "在完成以下操作时发生错误：{{enrollmentsLabel}}"
+
+msgid "An unknown error occurred when completing {{enrollmentsLabel}}"
+msgstr "完成时发生了一个未知错误{{enrollmentsLabel}}"
+
+msgid "You do not have access to delete {{enrollmentsLabel}}"
+msgstr "您无权删除{{enrollmentsLabel}}"
+
+msgid ""
+"An error occurred while loading the selected {{enrollmentsLabel}}. Please "
+"try again."
+msgstr "加载所选的{{enrollmentsLabel}} 时发生错误。请重试。"
+
+msgid "Active {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Active {{enrollmentsLabel}} ({{count}})"
+msgstr[0] "{{enrollmentsLabel}} （{{count}} ）"
+
+msgid "Completed {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Completed {{enrollmentsLabel}} ({{count}})"
+msgstr[0] "已完成《{{enrollmentsLabel}} 》（{{count}} ）"
+
+msgid "Cancelled {{enrollmentsLabel}} ({{count}})"
+msgid_plural "Cancelled {{enrollmentsLabel}} ({{count}})"
+msgstr[0] "已取消{{enrollmentsLabel}} ({{count}})"
+
+msgid "Error deleting {{enrollmentsLabel}}"
+msgstr "删除时出错{{enrollmentsLabel}}"
+
+msgid ""
+"There was an error while deleting the {{enrollmentsLabel}}. Please see the "
+"details below."
+msgstr "删除{{enrollmentsLabel}} 时发生错误。请参阅以下详细信息。"
+
+msgid "Delete selected {{enrollmentsLabel}}"
+msgstr "删除所选内容{{enrollmentsLabel}}"
+
+msgid "Delete {{count}} {{enrollmentLabel}}"
+msgid_plural "Delete {{count}} {{enrollmentLabel}}"
+msgstr[0] "删除{{count}} {{enrollmentsLabel}}"
+
+msgid "Delete {{enrollmentsLabel}}"
+msgstr "删除{{enrollmentsLabel}}"
+
+msgid "An error occurred when deleting {{enrollmentsLabel}}"
+msgstr "删除时发生错误{{enrollmentsLabel}}"
+
+msgid "Working list could not be updated"
+msgstr "工作清单无法更新"
+
+msgid "an error occurred loading the working lists"
+msgstr "加载工作列表时发生错误"
+
+msgid "Update view"
+msgstr "更新视图"
+
+msgid "Save current view..."
+msgstr "保存当前视图"
+
+msgid "Save current view as..."
+msgstr "另存当前视图为"
+
+msgid "Delete view"
+msgstr "删除视图"
+
+msgid "Share view..."
+msgstr "分享视图"
+
+msgid "Do you really want to delete the '{{templateName}}' view?"
+msgstr "你真想删除  '{{templateName}}'  视图"
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "Save As view"
+msgstr "另存视图为"
+
+msgid "View name"
+msgstr "视图名称"
+
+msgid "Show Less"
+msgstr "显示较少<br>"
+
+msgid "Show All"
+msgstr "显示全部"
+
+msgid "Add to ongoing bulk data entry"
+msgstr "添加到正在进行的批量数据录入"
+
+msgid "Add page to ongoing bulk data entry"
+msgstr "为正在进行的批量数据录入添加页面"
+
+msgid "Available bulk entry forms"
+msgstr "可用的批量输入表格"
+
+msgid "Open in bulk data entry"
+msgstr "打开批量数据录入"
+
+msgid "Open page in bulk data entry"
+msgstr "批量输入数据时打开页面"
+
+msgid "{{count}} selected"
+msgid_plural "{{count}} selected"
+msgstr[0] "已选择 {{count}} "
+
+msgid "Deselect all"
+msgstr "取消全选"
+
+msgid "Details (Advanced)"
+msgstr "详细信息（高级）"
+
+msgid "An unknown error occurred."
+msgstr "出现未知错误。"
+
+msgid "Download as JSON"
+msgstr "下载为JSON"
+
+msgid "Download as CSV"
+msgstr "获取CSV格式报表"
+
+msgid "Download with current filters"
+msgstr "随着过滤器下载"
+
+msgid "Exact matches only"
+msgstr "仅限完全匹配"
+
+msgid "Must match the start of the value"
+msgstr "必须与值的起始部分相匹配"
+
+msgid "Must match the end of the value"
+msgstr "必须与数值的末尾一致"
+
+msgid "enrollments"
+msgstr "注册人数"
+
+msgid "event"
+msgstr "事件"
+
+msgid "events"
+msgstr "事件"
+
+msgid "program stage"
+msgstr "项目阶段"
+
+msgid "program stages"
+msgstr "项目阶段"
+
+msgid "note"
+msgstr "注"
+
+msgid "notes"
+msgstr "注释"
+
+msgid "relationship"
+msgstr "关系"
+
+msgid "relationships"
+msgstr "关系"
+
+msgid "attribute"
+msgstr "属性"
+
+msgid "attributes"
+msgstr "属性"
+
+msgid "organisation unit"
+msgstr "组织单位"
+
+msgid "follow-up"
+msgstr "后续"
+
+msgid "Scheduled{{ escape }} due {{ time }}"
+msgstr "调度{{ escape }}到期{{ time }}"
+
+msgid "Overdue{{ escape }} due {{ time }}"
+msgstr "逾期{{ escape }}到期{{ time }}"
+
+msgid "Overdue"
+msgstr "逾期"
+
+msgid "Skipped"
+msgstr "跳过"
+
+msgid "{{trackedEntityName}} in program{{escape}} {{programName}}"
+msgstr "项目{{escape}} {{programName}}中的{{trackedEntityName}}"
+
+msgid "Program not found"
+msgstr "没有发现项目"
+
+msgid "Program is not a tracker program"
+msgstr "项目不是跟踪随访项目"
+
+msgid "Could not save {{eventLabel}}"
+msgstr "无法保存{{eventLabel}}"
+
+msgid "Could not delete {{eventLabel}}"
+msgstr "无法删除{{eventLabel}}"
+
+msgid "Could not save working list"
+msgstr "不能保存工作列表"
+
+msgid "Could not add working list"
+msgstr "不能添加工作列表"
+
+msgid "Could not delete working list"
+msgstr "不能删除工作列表"
+
+msgid "Search failed. Please try again."
+msgstr "搜索失败。请重试。"
+
+msgid "Error saving tracked entity instance"
+msgstr "保存跟踪的实体实例时出错"
+
+msgid "Error saving {{enrollmentLabel}}"
+msgstr "保存时出错{{enrollmentLabel}}"
+
+msgid "Error saving the {{enrollmentLabel}} {{eventLabel}}"
+msgstr "保存{{enrollmentLabel}} 时出错{{eventLabel}}"
+
+msgid "Error deleting the {{enrollmentLabel}} {{eventLabel}}"
+msgstr "删除{{enrollmentLabel}} 时发生错误{{eventLabel}}"
+
+msgid "Error editing the {{eventLabel}}, the changes made were not saved"
+msgstr "编辑{{eventLabel}} 时发生错误，所做的更改未被保存"
+
+msgid "Error updating the Assignee"
+msgstr "更新受托人时出错"
+
+msgid "Could not save {{enrollmentLabel}} {{noteLabel}}"
+msgstr "无法保存{{enrollmentLabel}} {{noteLabel}}"
+
+msgid "Could not save {{eventLabel}} {{noteLabel}}"
+msgstr "无法保存{{eventLabel}} {{noteLabel}}"
+
+msgid "There was an error fetching metadata"
+msgstr "获取元数据时出现错误"
+
+msgid "Please provide a valid date and time"
+msgstr "日期和时间"
+
+msgid "Please provide a valid time"
+msgstr "有效的时间"
+
+msgid "Please provide a valid url"
+msgstr "请提供有效的URL"
+
+msgid "Please provide a valid email address"
+msgstr "请提供有效的邮箱"
+
+msgid "Please provide a valid age"
+msgstr "请提供有效年龄"
+
+msgid "Please provide a valid phone number"
+msgstr "请提供有效的电话号码"
+
+msgid "Please provide a valid selection."
+msgstr "请提供有效的选项。"
+
+msgid "This value already exists"
+msgstr "值已经存在"
+
+msgid "\"From\" cannot be greater than \"To\""
+msgstr "自不能大于至"
+
+msgid ""
+"Please enter at least {{minCharactersToSearch}} characters for {{formName}} "
+"to perform a search"
+msgstr "请输入至少{{minCharactersToSearch}} 个字符，以便{{formName}} 进行搜索"
+
+msgid "Checking..."
+msgstr "检查"
+
+msgid "Please provide a valid positive integer"
+msgstr "请提供一个有效的正整数"
+
+msgid "Please enter a valid time"
+msgstr "请输入有效时间"
+
+msgid "Please enter a time"
+msgstr "请输入时间"
+
+msgid ""
+"The following {{attributeLabel}} type is not supported for searching and has"
+" been hidden"
+msgid_plural ""
+"The following {{attributeLabel}} type is not supported for searching and has"
+" been hidden"
+msgstr[0] "以下{{attributesLabel}} 类型不支持搜索，且已被隐藏"
+
+msgid "Some {{attributesLabel}} are hidden"
+msgstr "部分{{attributesLabel}} 被隐藏了"
+
+msgid "Set coordinate"
+msgstr "设置坐标"
+
+msgid "Page {{currentPage}}"
+msgstr "第{{currentPage}}页"
+
+msgid "Area on map saved"
+msgstr "地图上的区域已保存"
+
+msgid "Compatibility mode"
+msgstr "兼容性模式"
+
+msgid ""
+"This app is currently running in compatibility mode due to browser "
+"restrictions. For better performance, use another browser or exit private "
+"mode if this is currently in use."
+msgstr "由于浏览器的限制，此应用程序目前在兼容模式下运行。如果当前使用的是兼容模式，请使用其他浏览器或退出隐私模式，以获得更好的性能。"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "Capture NP"
+
+msgctxt "Title for shortcut used by command palette"
+msgid "__MANIFEST_SHORTCUT_Search TEI"
+msgstr "搜索 TEI"

@@ -1,0 +1,136 @@
+import { batchActions } from 'redux-batched-actions';
+import type { OrgUnit } from '@dhis2/rules-engine-javascript';
+import type { ReduxAction } from 'capture-core-utils/types';
+import { getApplicableRuleEffectsForTrackerProgram, updateRulesEffects } from '../../../../rules';
+import type { ProgramStage, TrackerProgram, RenderFoundation } from '../../../../metaData';
+import { getDataEntryKey } from '../../../DataEntry/common/getDataEntryKey';
+import { loadNewDataEntry } from '../../../DataEntry/actions/dataEntryLoadNew.actions';
+import { openDataEntryForNewEnrollment } from './open.actions';
+import {
+    getEnrollmentDateValidatorContainer,
+    getIncidentDateValidatorContainer,
+} from '../fieldValidators';
+import {
+    attributeOptionsKey,
+    enrollmentAttributeOptionsKey,
+    getCategoryOptionsValidatorContainers,
+    getEnrollmentCategoryOptionsValidatorContainers,
+} from '../../../DataEntryDhis2Helpers';
+import { convertGeometryOut } from '../../converters';
+import { convertDateObjectToDateFormatString } from '../../../../utils/converters/date';
+import { addFormData } from '../../../D2Form/actions/form.actions';
+import type { ProgramCategory } from '../../../WidgetEventSchedule/CategoryOptions/CategoryOptions.types';
+import { getDataEntryPropsToInclude } from '../EnrollmentWithFirstStageDataEntry';
+import { clearPrepopulatedData } from '../../../Pages/New/NewPage.actions';
+
+const itemId = 'newEnrollment';
+
+type DataEntryPropsToInclude = Array<any>;
+
+const enrollmentDataEntryPropsToInclude: DataEntryPropsToInclude = [
+    {
+        id: 'enrolledAt',
+        type: 'DATE',
+        validatorContainers: getEnrollmentDateValidatorContainer(),
+    },
+    {
+        id: 'occurredAt',
+        type: 'DATE',
+        validatorContainers: getIncidentDateValidatorContainer(),
+    },
+    {
+        clientId: 'geometry',
+        dataEntryId: 'geometry',
+        onConvertOut: convertGeometryOut,
+    },
+];
+
+export const batchActionTypes = {
+    OPEN_DATA_ENTRY_FOR_NEW_ENROLLMENT_BATCH: 'OpenDataEntryForNewEnrollmentBatch',
+};
+
+export const openDataEntryForNewEnrollmentBatchAsync = async ({
+    program,
+    orgUnit,
+    dataEntryId,
+    extraActions = [],
+    extraDataEntryProps = [],
+    formValues,
+    clientValues,
+    firstStage,
+    programCategory,
+    formFoundation,
+}: {
+    program: TrackerProgram;
+    orgUnit: OrgUnit;
+    dataEntryId: string;
+    extraActions?: Array<ReduxAction<any, any>>;
+    extraDataEntryProps?: Array<any>;
+    formValues: { [key: string]: any };
+    clientValues: { [key: string]: any };
+    firstStage?: ProgramStage;
+    programCategory?: ProgramCategory;
+    formFoundation: RenderFoundation;
+}) => {
+    const enrollmentProgramCategory = program.enrollmentCategoryCombination;
+    const formId = getDataEntryKey(dataEntryId, itemId);
+    const addFormDataActions = addFormData(`${dataEntryId}-${itemId}`, formValues);
+    const firstStageDataEntryPropsToInclude = firstStage && getDataEntryPropsToInclude(firstStage);
+
+    const fabricateFirstStageEvent = (stage: ProgramStage) => ({
+        programStageId: stage.id,
+        programStageName: stage.name,
+    });
+    const firstStageEvent = firstStage && fabricateFirstStageEvent(firstStage);
+
+    const dataEntryPropsToInclude = [
+        ...enrollmentDataEntryPropsToInclude,
+        ...extraDataEntryProps,
+        ...(firstStageDataEntryPropsToInclude || []),
+        ...(programCategory?.categories?.map(category => ({
+            id: `${attributeOptionsKey}-${category.id}`,
+            type: 'TEXT',
+            validatorContainers:
+                getCategoryOptionsValidatorContainers({ categories: programCategory.categories }, category.id),
+        })) ?? []),
+        ...(enrollmentProgramCategory?.categories?.map(category => ({
+            id: `${enrollmentAttributeOptionsKey}-${category.id}`,
+            type: 'TEXT',
+            validatorContainers: getEnrollmentCategoryOptionsValidatorContainers(
+                { enrollmentCategories: enrollmentProgramCategory.categories },
+                category.id,
+            ),
+        })) ?? []),
+    ];
+
+    const dataEntryActions =
+            loadNewDataEntry(
+                dataEntryId,
+                itemId,
+                dataEntryPropsToInclude,
+                { enrolledAt: convertDateObjectToDateFormatString(new Date()) },
+            );
+
+    const effects = getApplicableRuleEffectsForTrackerProgram({
+        program,
+        orgUnit,
+        currentEvent: firstStageEvent,
+        stage: firstStage,
+        attributeValues: clientValues,
+        enrollmentData: { enrolledAt: new Date().toISOString() },
+        formFoundation,
+        isEnrollmentFormWithEvent: true,
+    });
+
+    return batchActions([
+        openDataEntryForNewEnrollment(
+            dataEntryId,
+            {},
+        ),
+        ...dataEntryActions,
+        addFormDataActions,
+        clearPrepopulatedData(),
+        updateRulesEffects(effects, formId),
+        ...extraActions,
+    ], batchActionTypes.OPEN_DATA_ENTRY_FOR_NEW_ENROLLMENT_BATCH);
+};

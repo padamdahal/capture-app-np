@@ -1,0 +1,23 @@
+import type { InternalComponentError, OrgUnitValue, Validation } from '../widgetEventSchedule.types';
+
+export type PlainProps = {
+    stageId: string;
+    enrolledAt: string;
+    displayDueDateLabel?: string | null;
+    scheduleDate?: string | null;
+    serverScheduleDate?: string | null;
+    setScheduleDate: (date: string) => void;
+    occurredAt: string;
+    eventData: Array<any>;
+    eventCountInOrgUnit: number;
+    serverSuggestedScheduleDate?: string | null;
+    hideDueDate?: boolean;
+    orgUnit?: OrgUnitValue | null;
+    expiryPeriod?: {
+        expiryPeriodType?: string | null;
+        expiryDays?: number | null;
+    };
+    validation?: Validation;
+    setValidation: (validation: Validation) => void;
+    setInternalComponentError: (error: InternalComponentError | undefined) => void;
+};
